@@ -1,0 +1,20 @@
+{
+  "name": "adrian_portfolio_23",
+  "version": "1.0.0",
+  "description": "Adrian Bueno Portfolio 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianbuenoo095/Adrian_Portfolio_23.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23/issues"
+  },
+  "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme"
+}

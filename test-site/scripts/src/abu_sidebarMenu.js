@@ -3,13 +3,13 @@ const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener("click", opensNavigationBar);
-hamburger.addEventListener("click", hidesNavigationBAR);
+hamburger.addEventListener("click", hidesNavigationBar);
 
 function opensNavigationBar() {
   navLinks.classList.toggle("open");
 }
 
-function hidesNavigationBAR() {
+function hidesNavigationBar() {
   links.forEach((link) => {
     console.log(`hello ${link}`);
     link.classList.toggle("fade");

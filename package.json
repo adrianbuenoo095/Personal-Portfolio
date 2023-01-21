@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23/issues"
   },
-  "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme"
+  "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme",
+  "devDependencies": {
+    "prettier": "2.8.3"
+  }
 }

@@ -1,15 +1,14 @@
+function navMenu() {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelector("nav-links li");
 
-function navMenu(){
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelector("nav-links li");
-
-hamburger.addEventListener("click", ()=>{
+  hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-    
-links.forEach(link =>{
-        link.classList.toggle("fade");
+
+    links.forEach((link) => {
+      link.classList.toggle("fade");
     });
-});
+  });
 }
-navMenu();  
+navMenu();

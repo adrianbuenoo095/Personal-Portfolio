@@ -2,7 +2,8 @@
   "name": "adrian_portfolio_23",
   "version": "1.0.0",
   "description": "Adrian Bueno Portfolio 2023",
-  "main": "abu_main_app.js",
+  "type": "module",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme",
   "devDependencies": {
-    "prettier": "2.8.3"
+    "prettier": "2.8.3",
+    "webpack": "^5.75.0"
   }
 }

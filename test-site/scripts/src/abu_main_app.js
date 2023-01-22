@@ -1,4 +1,4 @@
-import {hidesNavigationBar, openNavigationBar} from "./abu_sidebarMenu"
+import { hidesNavigationBar, openNavigationBar } from "./abu_sidebarMenu";
 /**
  * Author: Adrian Bueno
  *
@@ -6,9 +6,9 @@ import {hidesNavigationBar, openNavigationBar} from "./abu_sidebarMenu"
  *
  *
  */
-window.addEventListener('load', onLoad); 
-function onLoad(evt){
-    hidesNavigationBar();
-    openNavigationBar();
-
+window.addEventListener("load", onLoad);
+function onLoad(evt) {
+  console.log("page is fully loaded");
+  window.addEventListener("load", hidesNavigationBar);
+  openNavigationBar();
 }

@@ -1,4 +1,5 @@
 export function getsCurrentYear() {
+  debugger;
   let dateElement = document.getElementById("date");
   let date = new Date();
   let fullYear = date.getFullYear();

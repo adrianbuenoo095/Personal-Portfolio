@@ -5,11 +5,11 @@ const links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener("click", opensNavigationBar);
 hamburger.addEventListener("click", hidesNavigationBar);
 
-export function opensNavigationBar() {
+function opensNavigationBar() {
   navLinks.classList.toggle("open");
 }
 
-export function hidesNavigationBar() {
+function hidesNavigationBar() {
   links.forEach((link) => {
     console.log(`hello ${link}`);
     link.classList.toggle("fade");

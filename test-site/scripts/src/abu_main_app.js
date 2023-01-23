@@ -1,11 +1,8 @@
-import { hidesNavigationBar, openNavigationBar } from "./abu_sidebarMenu";
 /**
  * Author: Adrian Bueno
  */
+import { getsCurrentYear } from "./getsCurrentYear.js";
 
-window.addEventListener("load", onLoad);
-function onLoad(evt) {
-  console.log("page is fully loaded");
-  window.addEventListener("load", hidesNavigationBar);
-  openNavigationBar();
-}
+(function () {
+  getsCurrentYear();
+})();

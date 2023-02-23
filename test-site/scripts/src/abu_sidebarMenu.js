@@ -11,7 +11,6 @@ function opensNavigationBar() {
 
 function hidesNavigationBar() {
   links.forEach((link) => {
-    console.log(`hello ${link}`);
     link.classList.toggle("fade");
   });
 }

@@ -2,9 +2,8 @@
 * CSS reset 
 * Reminder: Do not touch this unless you know what you are doing 
 * @author: Adrian Bueno
-*
-*
 */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -87,8 +86,6 @@ select {
 
 /* Custom Button Styles */
 
-/* Custom Horizontal Rule */
-
 /* Side Menu */
 
 nav {
@@ -142,6 +139,7 @@ nav {
   height: 100vh;
   background: #5b78c7;
 }
+
 .skills-set {
   display: flex;
   justify-content: space-around;
@@ -155,6 +153,7 @@ nav {
 }
 /* Skill Section ends here */
 @media (max-width: 768px) {
+  
 }
 
 /* Footer */
@@ -183,6 +182,7 @@ footer {
     transform: translate(-5%, -50%);
     z-index: 2;
   }
+
   .nav-links {
     position: fixed;
     background: #5b78c7;
@@ -194,6 +194,7 @@ footer {
     transition: all 1s ease-out;
     pointer-events: none;
   }
+
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);

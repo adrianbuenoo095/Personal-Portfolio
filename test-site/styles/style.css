@@ -68,7 +68,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    /* scroll-behavior: auto !important; */
   }
 }
 /*CSS reset ends here */
@@ -77,6 +77,11 @@ select {
   font-family: "Roboto";
   src: url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /*---Container--*/
 
@@ -93,6 +98,7 @@ nav {
   background: #5b78c7;
   z-index: 999999;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -102,6 +108,7 @@ nav {
   align-items: center;
   margin-left: auto;
 }
+
 .nav-links li a {
   color: rgb(255, 255, 255);
   text-decoration: none;

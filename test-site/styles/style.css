@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+}
+
 /*!
 * CSS reset 
 * Reminder: Do not touch this unless you know what you are doing 
@@ -72,11 +77,6 @@ select {
 }
 /*CSS reset ends here */
 
-@font-face {
-  font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -90,11 +90,11 @@ html {
 /* Custom Button Styles */
 
 /* Side Menu */
-
 nav {
   height: 10vh;
   background: #5b78c7;
   z-index: 999999;
+  position: relative;
 }
 
 .nav-links {
@@ -105,8 +105,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
- }
-
+}
 
 .nav-links li a {
   color: rgb(255, 255, 255);
@@ -138,9 +137,6 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.lower {
-  text-transform: lowercase;
-}
 /* Skill Section */
 .about {
   height: 100vh;
@@ -160,14 +156,12 @@ nav {
 }
 /* Skill Section ends here */
 
-
 /* Footer */
 footer {
   padding: 100px 0;
 }
+/* Footer ends here */
 
-
-/* Nav bar */
 .hamburger {
   position: absolute;
   cursor: pointer;
@@ -176,16 +170,6 @@ footer {
   transform: translate(-5%, -50%);
   z-index: 2;
 }
-
-.hamburger::before{
-  
-}
-
-nav {
-  position: relative;
-}
-
-
 
 .nav-links.open {
   clip-path: circle(1000px at 90% -10%);

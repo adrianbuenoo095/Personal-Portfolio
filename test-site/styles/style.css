@@ -166,7 +166,6 @@ footer {
   padding: 100px 0;
 }
 
-
 /* Nav bar */
 .hamburger {
   position: absolute;
@@ -177,8 +176,7 @@ footer {
   z-index: 2;
 }
 
-.hamburger::before{
-  
+.hamburger::before {
 }
 
 nav {

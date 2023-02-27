@@ -1,4 +1,4 @@
-const hamburgerIcon = document.querySelector(".hamburgerIcon");
+const hamburgerIcon = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
 hamburgerIcon.addEventListener("click", opensNavigationBar);

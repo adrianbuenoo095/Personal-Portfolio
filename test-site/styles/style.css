@@ -158,13 +158,13 @@ nav {
   font-family: "Roboto", "Helvetica", "Arial";
 }
 /* Skill Section ends here */
-@media (max-width: 768px) {
-}
+
 
 /* Footer */
 footer {
   padding: 100px 0;
 }
+
 
 /* Nav bar */
 .hamburger {
@@ -176,7 +176,8 @@ footer {
   z-index: 2;
 }
 
-.hamburger::before {
+.hamburger::before{
+  
 }
 
 nav {
@@ -213,6 +214,7 @@ nav {
 .nav-links li:nth-child(3) {
   transition: all 0.5s ease 0.2s;
 }
+
 li.fade {
   opacity: 1;
 }

@@ -1,8 +1,8 @@
-const hamburger = document.querySelector(".hamburger");
+const hamburgerIcon = document.querySelector(".hamburgerIcon");
 const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", opensNavigationBar);
-hamburger.addEventListener("click", hidesNavigationBar);
+hamburgerIcon.addEventListener("click", opensNavigationBar);
+hamburgerIcon.addEventListener("click", hidesNavigationBar);
 
 function opensNavigationBar() {
   navLinks.classList.toggle("open");

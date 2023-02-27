@@ -105,7 +105,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-}
+ }
+
 
 .nav-links li a {
   color: rgb(255, 255, 255);
@@ -184,17 +185,7 @@ nav {
   position: relative;
 }
 
-.nav-links {
-  position: fixed;
-  background: #5b78c7;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-  clip-path: circle(100px at 90% -10%);
-  -webkit-clip-path: circle(100px at 90% -10%);
-  transition: all 1s ease-out;
-  pointer-events: none;
-}
+
 
 .nav-links.open {
   clip-path: circle(1000px at 90% -10%);
@@ -226,5 +217,17 @@ li.fade {
     height: 3px;
     background: #fff;
     margin: 5px;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #5b78c7;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
   }
 }

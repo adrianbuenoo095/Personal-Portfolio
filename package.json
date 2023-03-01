@@ -29,5 +29,6 @@
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "gsap": "^3.11.4",
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }

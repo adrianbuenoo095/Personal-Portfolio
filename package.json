@@ -1,35 +1,12 @@
 {
   "name": "adrian_portfolio_23",
   "version": "1.0.0",
-  "description": "Adrian Bueno Portfolio 2023",
-  "type": "module",
-  "private": true,
+  "description": "<<<<<<< HEAD",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adrianbuenoo095/Adrian_Portfolio_23.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Adrian Bueno <adrianbueno095@gmail.com> (https://github.com/adrianbuenoo095)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23/issues"
-  },
-  "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme",
-  "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "prettier": "2.8.3",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
-    "gsap": "^3.11.4",
-    "lodash": "^4.17.21"
-  },
-  "main": "webpack.config.js"
+  "author": "",
+  "license": "ISC"
 }

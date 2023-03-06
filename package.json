@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "2.8.3",

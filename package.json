@@ -16,6 +16,7 @@
   "homepage": "https://github.com/adrianbuenoo095/Adrian_Portfolio_23#readme",
   "devDependencies": {
     "css": "^3.0.0",
+    "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",

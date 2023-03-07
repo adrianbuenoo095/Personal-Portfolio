@@ -1,8 +1,8 @@
 import { getsCurrentYear } from "./getsCurrentYear.js";
 
 /**
- * Author: Adrian Bueno
- */
+ * @author: Adrian Bueno <adrianbueno095@gmail.com>
+*/
 (function () {
   getsCurrentYear();
 })();

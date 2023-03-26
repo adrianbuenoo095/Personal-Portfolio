@@ -4,10 +4,10 @@ const navLinks = document.querySelector(".nav-links")!;
 hamburgerIcon.addEventListener("click", opensNavigationBar);
 hamburgerIcon.addEventListener("click", hidesNavigationBar);
 
-function opensNavigationBar() {
+function opensNavigationBar() : void{
   navLinks?.classList.toggle("open");
 }
 
-function hidesNavigationBar() {
+function hidesNavigationBar() : void {
   navLinks?.classList.toggle("fade");
 }

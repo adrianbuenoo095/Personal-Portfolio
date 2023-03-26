@@ -9,7 +9,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     },
     "lib": [
       "dom",
@@ -17,7 +19,7 @@
       "esnext"
     ],
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,

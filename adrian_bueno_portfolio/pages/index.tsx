@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Navigation } from "@/components/Navigation";
 import { Portfolio } from "@/components/Portfolio";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}></div>
       </main>
+      <AboutMe />
       <Portfolio />
       <Footer />
     </>

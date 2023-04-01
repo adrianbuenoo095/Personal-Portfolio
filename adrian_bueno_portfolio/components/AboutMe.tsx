@@ -3,7 +3,7 @@ import * as React from "react";
 export class AboutMe extends React.Component {
   render() {
     return (
-      <div id="aboutMe" className="about">
+      <div id="aboutMe" className="text-3xl font-bold underline">
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut la bore et dolore magna aliquyam

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default class AboutMe extends React.Component {
+export class AboutMe extends React.Component {
   render() {
     return (
       <div id="aboutMe" className="about">

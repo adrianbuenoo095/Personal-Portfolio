@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Navigation } from "@/components/Navigation";
 import { Portfolio } from "@/components/Portfolio";
-import AboutMe from "@/components/AboutMe";
-
+import { AboutMe } from "@/components/AboutMe";
+import { Blog } from "@/components/Blog";
 
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
       <AboutMe />
       <Portfolio />
       <Footer />
+      <Blog />
     </>
   );
 }

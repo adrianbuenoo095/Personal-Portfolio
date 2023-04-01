@@ -23,8 +23,8 @@ export default function Home() {
       </main>
       <AboutMe />
       <Portfolio />
-      <Footer />
       <Blog />
+      <Footer />
     </>
   );
 }

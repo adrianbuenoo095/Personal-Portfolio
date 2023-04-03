@@ -1,11 +1,11 @@
-import * as React from "react";
+import type { ReactElement } from "react";
 
-export class Footer extends React.Component {
-  render() {
-    return (
-      <footer id="footer" className="footer-section">
-        <p>&copy; {new Date().getFullYear()}&nbsp;The pocman</p>
-      </footer>
-    );
-  }
-}
+const Footer = (): ReactElement => {
+  return (
+    <footer id="footer" className="footer-section">
+      <p>&copy; {new Date().getFullYear()}&nbsp;The pocman</p>
+    </footer>
+  );
+};
+
+export default Footer; 

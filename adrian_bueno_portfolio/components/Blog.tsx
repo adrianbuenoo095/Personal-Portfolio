@@ -1,7 +1,7 @@
 import * as React from "react";
+import { ReactElement } from "react";
 
-export class Blog extends React.Component {
-  render() {
+const Blog  = () : ReactElement => {
     return (
       <div id="blog" className="blog">
         <p>
@@ -17,5 +17,6 @@ export class Blog extends React.Component {
         </p>
       </div>
     );
-  }
 }
+
+export default Blog;

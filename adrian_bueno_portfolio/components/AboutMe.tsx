@@ -1,7 +1,7 @@
 import * as React from "react";
+import { ReactElement } from "react";
 
-export class AboutMe extends React.Component {
-  render() {
+const AboutMe = (): ReactElement => {
     return (
       <div id="aboutMe" className="text-3xl font-bold underline">
         <p>
@@ -18,4 +18,5 @@ export class AboutMe extends React.Component {
       </div>
     );
   }
-}
+
+  export default AboutMe;

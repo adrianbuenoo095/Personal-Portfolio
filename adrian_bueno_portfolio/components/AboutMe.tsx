@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 
 const AboutMe = (): ReactElement => {
   return (
-    <div id="aboutMe" className="text-3xl font-bold underline">
+    <div className="text-3xl font-bold underline">
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut la bore et dolore magna aliquyam erat, sed

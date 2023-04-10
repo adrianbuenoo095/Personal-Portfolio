@@ -9,7 +9,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../images/bg.jpg");
   flex-direction: column;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import bg from "/public/assets/images/bg.jpg";
+import bg from "../public/assets/images/bg.jpg";
 
 const Header = (): ReactElement => {
   console.log(bg);

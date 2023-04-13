@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import bg from "../public/assets/images/bg.jpg";
+let bg = require("../public/assets/images/bg.jpg");
 
 const Header = (): ReactElement => {
   console.log(bg);
@@ -9,7 +9,7 @@ const Header = (): ReactElement => {
         <h1 className="">Hello, I am the Pocman</h1>
         <div className="backgroud-image">
         </div>
-          <img src={String(bg)} alt="background-image" />
+          <img src={bg} alt="background-image" />
       </div>
     </div>
   );

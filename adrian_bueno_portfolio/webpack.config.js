@@ -17,7 +17,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options:{
-              esModule:true,
+              esModule:false,
             }
           }
         ]

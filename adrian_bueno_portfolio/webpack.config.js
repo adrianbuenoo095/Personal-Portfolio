@@ -13,11 +13,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
+        include: /images/,
         use: [
           {
             loader: 'file-loader',
-            options:{
-              esModule:false,
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/'
             }
           }
         ]

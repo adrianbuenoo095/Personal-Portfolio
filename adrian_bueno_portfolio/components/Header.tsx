@@ -1,15 +1,15 @@
 import type { ReactElement } from "react";
-let bg = require("../public/assets/images/bg.jpg");
+// import bg from "../public/" ;
 
 const Header = (): ReactElement => {
-  console.log(bg);
+  // console.log(bg);
   return (
     <div id="top" className="header">
       <div className="intro-name">
         <h1 className="">Hello, I am the Pocman</h1>
         <div className="backgroud-image">
         </div>
-          <img src={String(bg)} alt="background-image" />
+          <img alt="background-image" />
       </div>
     </div>
   );

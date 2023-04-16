@@ -1,15 +1,15 @@
 import type { ReactElement } from "react";
-// import bg from "../public/" ;
+import backgroundImage from "./public/assets/images/backgroundImage.jpg" ;
 
 const Header = (): ReactElement => {
-  // console.log(bg);
+  console.log(backgroundImage);
   return (
     <div id="top" className="header">
       <div className="intro-name">
         <h1 className="">Hello, I am the Pocman</h1>
         <div className="backgroud-image">
-        </div>
           <img alt="background-image" />
+        </div>
       </div>
     </div>
   );

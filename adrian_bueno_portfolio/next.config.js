@@ -2,9 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    disableStaticImages: true
-  }
-
+    disableStaticImages: true,
+  },
 };
 
 module.exports = nextConfig;

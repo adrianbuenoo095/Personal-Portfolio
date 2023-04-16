@@ -1,4 +1,5 @@
 import type { ReactElement } from "react";
+
 const Header = (): ReactElement => {
   let backgroundImage = "assets/images/backgroundImage.jpg";
   return (
@@ -11,6 +12,6 @@ const Header = (): ReactElement => {
       </div>
     </div>
   );
-  };
+};
 
 export default Header;

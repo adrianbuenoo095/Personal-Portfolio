@@ -5,8 +5,9 @@ const Header = (): ReactElement => {
   return (
     <div id="top" className="header">
       <div className="intro-name">
-        <h1 className="">Hello, I am the Pocman</h1>
         <div className="backgroud-image">
+          <h1 className="">Hello, I am the Pocman</h1>
+          <input type="button" name="Click me" />
           <img src={backgroundImage} alt="background-image" />
         </div>
       </div>

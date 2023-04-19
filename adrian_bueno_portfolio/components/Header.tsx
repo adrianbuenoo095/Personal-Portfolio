@@ -11,7 +11,7 @@ const Header = (): ReactElement => {
     <div className="header">
       <div className="intro-name">
         <div className="backgroud-image">
-          <h1>Hello, I am the Pocman</h1>
+          <h1 className="content-center">Hello, I am the Pocman</h1>
           <Button />
           <img src={backgroundImage} alt="background-image" />
         </div>

@@ -12,7 +12,7 @@ const Header = (): ReactElement => {
       <div className="intro-name">
         <div className="backgroud-image">
         <div  className="flex h-screen justify-center items-center"> 
-          <h1 className="m-auto">Hello, I am the Pocman</h1>
+          <h1 className="text-3xl font-bold underline">Hello, I am the Pocman</h1>
           <Button />
         </div>
           <img src={backgroundImage} alt="background-image" />

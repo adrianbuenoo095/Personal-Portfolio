@@ -11,8 +11,8 @@ const Header = (): ReactElement => {
     <div className="header">
       <div className="intro-name">
         <div className="backgroud-image">
-        <div  className="flex h-screen justify-center items-center"> 
-          <h1 className="text-3xl font-bold underline">Hello, I am the Pocman</h1>
+        <div  className=""> 
+          <h1 className="relative h-32 bg-blue-400">Hello, I am the Pocman</h1>
           <Button />
         </div>
           <img src={backgroundImage} alt="background-image" />

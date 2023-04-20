@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/index.module.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
@@ -18,8 +17,8 @@ export default function Home() {
       </Head>
       <Navigation />
       <Header />
-      <main className={styles.main}>
-        <div className={styles.description}></div>
+      <main>
+        <div></div>
       </main>
       <AboutMe />
       <Portfolio />

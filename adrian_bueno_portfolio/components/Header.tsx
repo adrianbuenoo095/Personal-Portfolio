@@ -4,7 +4,7 @@ const Header = (): ReactElement => {
   let backgroundImage = "assets/images/backgroundImage.jpg";
 
   function Button() {
-    return <button>Learn more</button>;
+    return <button className="">Learn more</button>;
   }
 
   return (
@@ -12,7 +12,7 @@ const Header = (): ReactElement => {
       <div className="intro-name">
         <div className="backgroud-image">
         <div  className=""> 
-          <h1 className="relative h-32 bg-blue-400">Hello, I am the Pocman</h1>
+          <h1 className="text-3xl font-bold underlin">Hello, I am the Pocman</h1>
           <Button />
         </div>
           <img src={backgroundImage} alt="background-image" />

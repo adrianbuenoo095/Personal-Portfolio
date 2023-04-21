@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "webpack --config webpack.config.js",
+    "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
     "start": "next start",
     "lint": "next lint"
   },

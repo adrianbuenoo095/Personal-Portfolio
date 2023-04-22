@@ -15,7 +15,7 @@ const Header = (): ReactElement => {
             <h1 className="text-3xl text-white font-bold underline ">
               Hello, I am the Pocman
             </h1>
-          <Button />
+            <Button />
           </div>
           <img
             className="mx-auto"

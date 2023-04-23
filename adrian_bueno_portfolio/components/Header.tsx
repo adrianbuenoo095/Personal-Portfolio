@@ -11,12 +11,12 @@ const Header = (): ReactElement => {
     <div className="header">
       <div className="flex h-screen">
         <div className="flex h-screen justify-center items-center">
-          <h1 className="overflow-auto w-3/5 flex items-center">
+          <h1>
             Hello, I am the Pocman
           </h1>
-            <img className="" src={backgroundImage} alt="background-image" />
-          <Button />
         </div>
+        <img className="" src={backgroundImage} alt="background-image" />
+        <Button />
       </div>
     </div>
   );

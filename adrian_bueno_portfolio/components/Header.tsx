@@ -9,16 +9,14 @@ const Header = (): ReactElement => {
 
   return (
     <div className="header">
-      <div className="intro-name">
-        <div className="relative h-32 bg-blue-400">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-3xl text-white font-bold underline ">
+      <div className="flex h-screen justice-center items-center">
+        <div className="text-center bg-blue-400">
+            <h1 className="text-3x1">
               Hello, I am the Pocman
             </h1>
             <Button />
-          </div>
           <img
-            className="mx-auto"
+            className=""
             src={backgroundImage}
             alt="background-image"
           />

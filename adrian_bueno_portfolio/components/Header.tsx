@@ -15,12 +15,12 @@ const Header = (): ReactElement => {
             Hello, I am the Pocman
           </h1>
           <Button />
+          <img
+            className="object-cover w-full h-full"
+            src={backgroundImage}
+            alt="background-image"
+          />
         </div>
-        <img
-          className="object-cover w-full h-full"
-          src={backgroundImage}
-          alt="background-image"
-        />
       </div>
     </div>
   );

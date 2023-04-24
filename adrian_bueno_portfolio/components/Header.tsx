@@ -10,7 +10,7 @@ const Header = (): ReactElement => {
   return (
     <div className="header">
       <div className="flex h-screen">
-        <div className="relative w-40 h-40 rounded-full overflow-hidden">
+        <div className="relative w-40 h-40 overflow-hidden">
           <h1>
             Hello, I am the Pocman
           </h1>

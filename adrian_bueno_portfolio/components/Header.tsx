@@ -10,8 +10,8 @@ const Header = (): ReactElement => {
   return (
     <div className="header">
       <div className="flex h-screen">
-        <div className="relative w-40 h-40 overflow-hidden flex justify-center items-center">
-          <h1 className="text-white text-center z-10">
+        <div className="relative w-full h-full flex flex-col justify-center items-center">
+          <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-10">
             Hello, I am the Pocman
           </h1>
           <Button />

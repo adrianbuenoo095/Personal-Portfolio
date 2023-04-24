@@ -16,7 +16,6 @@ const Header = (): ReactElement => {
           </h1>
           <Button />
           <img
-            className="object-cover w-full h-full"
             src={backgroundImage}
             alt="background-image"
           />

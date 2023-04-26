@@ -4,7 +4,7 @@ const Header = (): ReactElement => {
   let backgroundImage = "assets/images/backgroundImage.jpg";
 
   function Button() {
-    return <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl text-white text-center z-10">Learn more</button>;
+    return <div><button className="absolute top-1/2 left-1/2 transform -translate-x-1 text-7xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">Learn more</button></div>;
   }
 
   return (

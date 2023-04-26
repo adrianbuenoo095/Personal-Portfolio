@@ -6,7 +6,7 @@ const Header = (): ReactElement => {
   function Button() {
     return (
       <div>
-        <button className="absolute top-1/2 left-1/2 transform -translate-x-1 text-7xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+        <button className="mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg">
           Learn more
         </button>
       </div>
@@ -17,7 +17,7 @@ const Header = (): ReactElement => {
     <div className="header">
       <div className="flex h-screen">
         <div className="relative w-full h-full flex flex-col justify-center items-center">
-          <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl	 text-white text-center z-10">
+          <h1 className="text-4xl font-bold text-black">
             Hello, I am the Pocman
           </h1>
           <Button />

@@ -15,15 +15,13 @@ const Header = (): ReactElement => {
 
   return (
     <div className="header">
-      <div className="flex h-screen">
-        <div className="relative w-full h-full flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center h-screen bg-cover">
           <h1 className="text-4xl font-bold text-black">
             Hello, I am the Pocman
           </h1>
           <Button />
           <img src={backgroundImage} alt="background-image" />
         </div> 
-      </div>
     </div>
   );
 };

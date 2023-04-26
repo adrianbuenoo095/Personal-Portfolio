@@ -4,7 +4,13 @@ const Header = (): ReactElement => {
   let backgroundImage = "assets/images/backgroundImage.jpg";
 
   function Button() {
-    return <div><button className="absolute top-1/2 left-1/2 transform -translate-x-1 text-7xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">Learn more</button></div>;
+    return (
+      <div>
+        <button className="absolute top-1/2 left-1/2 transform -translate-x-1 text-7xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+          Learn more
+        </button>
+      </div>
+    );
   }
 
   return (
@@ -15,11 +21,8 @@ const Header = (): ReactElement => {
             Hello, I am the Pocman
           </h1>
           <Button />
-          <img
-            src={backgroundImage}
-            alt="background-image"
-          />
-        </div>
+          <img src={backgroundImage} alt="background-image" />
+        </div> 
       </div>
     </div>
   );

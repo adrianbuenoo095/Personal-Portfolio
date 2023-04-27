@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 
 const Header = (): ReactElement => {
-  let backgroundImage = "assets/images/backgroundImage.jpg";
+  let bg = "assets/images/backgroundImage.jpg";
 
   function Button() {
     return (
@@ -15,8 +15,8 @@ const Header = (): ReactElement => {
 
   return (
     <div className="header">
-      <div className="flex flex-col justify-center items-center h-screen bg-cover">
-        <img className="mx-auto" src={backgroundImage} alt="background-image" />
+    <div className="flex flex-col justify-center items-center h-screen bg-cover" style={{ backgroundImage: `url(${bg})`,}}>
+        {/* <img className="mx-auto" src={backgroundImage} alt="background-image" /> */}
         <h1 className="text-4xl font-bold text-black">
           Hello, I am the Pocman
         </h1>

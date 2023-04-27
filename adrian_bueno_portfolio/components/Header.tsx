@@ -15,9 +15,11 @@ const Header = (): ReactElement => {
 
   return (
     <div className="header">
-    <div className="flex flex-col justify-center items-center h-screen bg-cover" style={{ backgroundImage: `url(${bg})`,}}>
-        {/* <img className="mx-auto" src={backgroundImage} alt="background-image" /> */}
-        <h1 className="text-4xl font-bold text-black">
+      <div
+        className="flex flex-col justify-center items-center h-screen bg-cover"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        <h1 className="text-4xl font-bold text-white">
           Hello, I am the Pocman
         </h1>
         <Button />

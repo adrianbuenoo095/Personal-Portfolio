@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 const Navigation = (): ReactElement => {
   return (
-    <nav>
+    <nav className="my-11">
       <div className="hamburger">
         <div className="line"></div>
         <div className="line"></div>

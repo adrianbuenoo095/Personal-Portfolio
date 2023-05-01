@@ -2,9 +2,9 @@ import type { ReactElement } from "react";
 
 const AboutMe = (): ReactElement => {
   return (
-    <div>
+    <div className="w-screen">
       <div>
-        <p className="text-3xl font-bold underline">
+        <p className="text-3xl font-bold">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut la bore et dolore magna aliquyam
           erat, sed diam voluptua. At vero eos et accusam et justo duo dolores

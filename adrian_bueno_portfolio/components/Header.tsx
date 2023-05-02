@@ -4,7 +4,7 @@ import type { ReactElement } from "react";
 const Header = (): ReactElement => {
   let bg = "assets/images/backgroundImage.jpg";
 
-  function Button() {
+  let Button = () => {
     return (
       <button className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded-lg ">
         Learn more

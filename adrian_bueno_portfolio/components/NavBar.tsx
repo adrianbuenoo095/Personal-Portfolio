@@ -1,5 +1,8 @@
 import { ReactElement } from "react";
-
+/**
+ * 
+ * @todo look at this link  https://codewithmarish.com/post/how-to-create-responsive-navbar-in-next-js 
+ */
 const Navigation = (): ReactElement => {
   return (
     <nav className="my-11">
@@ -8,8 +11,9 @@ const Navigation = (): ReactElement => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
+      <div className="text-black font-sans text-lg">
       <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
-        <li className="text-black font-sans text-lg">
+        <li>
           <a className="no-underline" href="#">
             Home
           </a>
@@ -24,6 +28,7 @@ const Navigation = (): ReactElement => {
           <a href="#blog">Blog</a>
         </li>
       </ul>
+      </div>
     </nav>
   );
 };

@@ -2,8 +2,7 @@ import type { ReactElement } from "react";
 
 const AboutMe = (): ReactElement => {
   return (
-    <div className="w-screen">
-      <div>
+    <div className="w-full h-full bg-yellow-400">
         <p className="text-3xl text-base">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut la bore et dolore magna aliquyam
@@ -16,7 +15,6 @@ const AboutMe = (): ReactElement => {
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
       </div>
-    </div>
   );
 };
 

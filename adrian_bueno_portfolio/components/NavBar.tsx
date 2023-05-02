@@ -9,7 +9,7 @@ const Navigation = (): ReactElement => {
         <div className="line"></div>
       </div>
       <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
-        <li className="text-white font-sans text-lg">
+        <li className="text-black font-sans text-lg">
           <a className="no-underline" href="#">
             Home
           </a>

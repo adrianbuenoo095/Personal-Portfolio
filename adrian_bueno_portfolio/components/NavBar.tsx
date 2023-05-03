@@ -6,11 +6,6 @@ import { ReactElement } from "react";
 const Navigation = (): ReactElement => {
   return (
     <nav className="my-11">
-      <div className="hamburger">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
       <div className="text-black font-sans text-lg">
       <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
         <li>

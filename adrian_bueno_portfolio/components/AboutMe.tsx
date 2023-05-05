@@ -3,7 +3,7 @@ import type { ReactElement } from "react";
 const AboutMe = (): ReactElement => {
   return (
     <div className="w-full h-full bg-yellow-400">
-        <p className="text-3xl text-base my-8 w-full" >
+        <p className="text-3xl my-8 w-full" >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut la bore et dolore magna aliquyam
           erat, sed diam voluptua. At vero eos et accusam et justo duo dolores

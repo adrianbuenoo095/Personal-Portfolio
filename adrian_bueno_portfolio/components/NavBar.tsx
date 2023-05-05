@@ -6,7 +6,7 @@ import { ReactElement } from "react";
 const Navigation = (): ReactElement => {
   return (
     <nav className="my-11">
-      <div className="text-black font-sans text-lg">
+      <div className="text-black font-sans text-lg ">
       <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
         <li>
           <a className="no-underline" href="#">

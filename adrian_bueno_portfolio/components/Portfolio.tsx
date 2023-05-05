@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 const Portfolio = (): ReactElement => {
   return (
-    <div className="bg-yellow-500">
+    <div className="bg-yellow-500 py-80">
       <h1>Adrian's Work</h1>
       <ul className="skills-set">
         <li>

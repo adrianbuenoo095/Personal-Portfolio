@@ -6,7 +6,7 @@ const AboutMe = (): ReactElement => {
       <div className="text-center">
         <h1 className="text-white font-bold text-8xl ">Who is the pocman?</h1>
       </div>
-      <p className="text-3xl my-8 w-full">
+      <p className="text-3xl my-8 ">
         The Pocman is an Instagram account that features artwork and comics
         created by an artist known as POC or "Person of Color" man. POC man uses
         their platform to showcase their unique perspective on current events,

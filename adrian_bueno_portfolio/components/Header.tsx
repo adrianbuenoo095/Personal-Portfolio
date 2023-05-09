@@ -1,17 +1,18 @@
 import Head from "next/head";
 import type { ReactElement } from "react";
+import {useState} from "react";
+
+let Button = () => {
+  return (
+    <button className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg ">
+      Learn more
+    </button>
+  );
+};
+
+let bg = "assets/images/backgroundImage.jpg";
 
 const Header = (): ReactElement => {
-  let bg = "assets/images/backgroundImage.jpg";
-
-  let Button = () => {
-    return (
-      <button className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg ">
-        Learn more
-      </button>
-    );
-  };
-
   return (
     <div>
       <Head>

@@ -5,10 +5,6 @@ import { useState, ReactElement } from "react";
  * @todo look at this link  https://codewithmarish.com/post/how-to-create-responsive-navbar-in-next-js
  */
 
-const MyComponentTest = () {
-    const [age, setAge] = useState(38);
-}
-
 const Navigation = (): ReactElement => {
   return (
     <nav className="my-11">

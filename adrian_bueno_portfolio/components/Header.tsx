@@ -6,7 +6,7 @@ const Header = (): ReactElement => {
 
   let Button = () => {
     return (
-      <button className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded-lg ">
+      <button className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg ">
         Learn more
       </button>
     );

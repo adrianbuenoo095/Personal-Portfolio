@@ -22,11 +22,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         test: /\.css$/i,
-        use: [
-          "style-loader",
-          "css-loader",
-          "ts-loader"
-        ],
+        use: ["style-loader", "css-loader", "ts-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

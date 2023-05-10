@@ -1,14 +1,14 @@
 import Head from "next/head";
 import type { ReactElement } from "react";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 let Button = () => {
-  const [count, setCount] = useState(3);
+  const router = useRouter();
   return (
     <div>
-      <p>{count}</p>
       <button
-        onClick={() => setCount(count + 1)}
+         onClick={() => router.push("/posts/first-post")}
         className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg "
       >
         Learn more

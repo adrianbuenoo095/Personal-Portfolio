@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { isBooleanObject } from "util/types";
 
 export default function FirstPost() {
   const router = useRouter();

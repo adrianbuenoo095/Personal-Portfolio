@@ -1,11 +1,11 @@
 type Props = {
-  person: {};
+  person: {name : string, imageId: string };
   size: number;
 };
 
 export const Avatar = ({ person, size }: Props) => {
   return (
-    <img className="avatar" src="" alt="The pocman" width={100} height={100} />
+    <img className="avatar" src="" alt={person.name} width={size} height={size} />
   );
 };
 

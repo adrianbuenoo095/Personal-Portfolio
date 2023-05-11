@@ -1,6 +1,5 @@
 import Head from "next/head";
 import type { ReactElement } from "react";
-import { useState } from "react";
 import { useRouter } from "next/router";
 
 let Button = () => {
@@ -8,7 +7,7 @@ let Button = () => {
   return (
     <div>
       <button
-         onClick={() => router.push("/posts/first-post")}
+        onClick={() => router.push("/posts/first-post")}
         className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg "
       >
         Learn more

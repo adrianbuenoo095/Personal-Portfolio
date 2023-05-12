@@ -1,3 +1,4 @@
+import { profile } from "console";
 import { ReactElement } from "react";
 
 const Portfolio = (): ReactElement => {

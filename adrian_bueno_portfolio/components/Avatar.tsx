@@ -3,6 +3,8 @@ type Props = {
   size: number;
 };
 
+let pocman = "assets/images/pocman_thick_version.png"
+
 export const Avatar = ({ person, size }: Props) => {
   return (
     <img className="avatar" src="" alt={person.name} width={size} height={size} />

@@ -21,7 +21,7 @@ export const Profile = () => {
   return (
     <div>
       <Avatar
-        size={100}
+        size={400}
         person={{
           name: "The pocman",
           imageId: "rdjkf2",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, ReactElement } from "react";
 
 /**
@@ -11,18 +12,16 @@ const Navigation = (): ReactElement => {
       <div className="text-black font-sans text-lg ">
         <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
           <li>
-            <a className="n" href="#">
-              Home
-            </a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#aboutMe">About Me</a>
+            <Link href="/about">About Me</Link>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <Link href="/posts/first-post">Blog</Link>
           </li>
         </ul>
       </div>

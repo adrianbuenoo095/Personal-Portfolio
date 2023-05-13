@@ -15,10 +15,10 @@ const Navigation = (): ReactElement => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About Me</Link>
+            <Link href="#Aboutme">About Me</Link>
           </li>
           <li>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="#Portfolio">Portfolio</Link>
           </li>
           <li>
             <Link href="/posts/first-post">Blog</Link>

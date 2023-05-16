@@ -10,18 +10,26 @@ const Navigation = (): ReactElement => {
   return (
     <nav className="my-11">
       <div className="text-black font-sans text-lg ">
-        <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto">
+        <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto ">
           <li>
-            <Link href="/">Home</Link>
+            <Link className="hover:text-teal-400" href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="#Aboutme">About Me</Link>
+            <Link className="hover:text-teal-400" href="#Aboutme">
+              About Me
+            </Link>
           </li>
           <li>
-            <Link href="#Portfolio">Portfolio</Link>
+            <Link className="hover:text-teal-400" href="#Portfolio">
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link href="/posts/first-post">Blog</Link>
+            <Link className="hover:text-teal-400" href="/posts/first-post">
+              Blog
+            </Link>
           </li>
         </ul>
       </div>

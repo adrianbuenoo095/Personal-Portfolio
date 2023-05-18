@@ -5,7 +5,7 @@ type Props = {
 
 let pocman = "assets/images/pocman_thick_version.png";
 
-export const Avatar = ({ person, size }: Props) => {
+const Avatar = ({ person, size }: Props) => {
   return (
     <img
       className="avatar"
@@ -17,7 +17,7 @@ export const Avatar = ({ person, size }: Props) => {
   );
 };
 
-export const Profile = () => {
+const Profile = () => {
   return (
     <div>
       <Avatar
@@ -30,3 +30,5 @@ export const Profile = () => {
     </div>
   );
 };
+
+export default Profile;

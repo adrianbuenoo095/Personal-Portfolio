@@ -4,18 +4,18 @@ import { ReactElement } from "react";
 const Portfolio = (): ReactElement => {
   return (
     <div className="bg-yellow-500 w-screen h-screen text-center">
-      <h1>Adrian's Work</h1>
-      <ul className="skills-set">
-        <li>
-          <a href="">Web Designer</a>
-        </li>
-        <li>
-          <a href="">Illustrator</a>
-        </li>
-        <li>
-          <a href="">Full-Stack</a>
-        </li>
-      </ul>
+      <h1 className="!text-x">Adrian&apos;s Work</h1>
+      <div className="skills-set">
+        <div>
+          <h1>Web Designer</h1>
+        </div>
+        <div>
+          <h1>Illustrator</h1>
+        </div>
+        <div>
+          <h1>Full-Stack</h1>
+        </div>
+      </div>
     </div>
   );
 };

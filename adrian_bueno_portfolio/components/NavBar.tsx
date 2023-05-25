@@ -21,11 +21,11 @@ const NavBar = ({ text, href, active }: Props): ReactElement => {
   return (
     <nav className="my-11">
       <div className="text-black font-sans text-lg ">
-        {MENU_LIST.map((href, text) => {
+        {MENU_LIST.map((href, idx) => {
           return (
             <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto ">
               <Link className="hover:text-teal-400" href={href.href}>
-                <li key={text}> {href.text}</li>
+                <li key={idx}> {href.href}</li>
               </Link>
             </ul>
           );

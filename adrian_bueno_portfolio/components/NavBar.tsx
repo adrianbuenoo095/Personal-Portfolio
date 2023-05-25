@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { userAgent } from "next/server";
 import { ReactElement, useState } from "react";
 
 interface Props {

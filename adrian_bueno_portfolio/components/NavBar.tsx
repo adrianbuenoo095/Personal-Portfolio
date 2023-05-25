@@ -1,40 +1,39 @@
 import Link from "next/link";
-import { ReactElement } from "react";
+import { userAgent } from "next/server";
+import { ReactElement, useState } from "react";
 
-/**
- *
- * @todo look at this link  https://codewithmarish.com/post/how-to-create-responsive-navbar-in-next-js
- */
+interface Props {
+  text: string;
+  href: string;
+  active?: boolean;
+}
 
-const Navigation = (): ReactElement => {
+const MENU_LIST = [
+  { text: "Home", href: "/" },
+  { text: "About Me", href: "/aboutMe" },
+  { text: "Portfolio", href: "/portfolio" },
+  { text: "Blog", href: "/blog" },
+];
+
+const NavBar = ({ text, href, active }: Props): ReactElement => {
+  const [navActive, setNavActive] = useState();
+  const [activeId, setActiveId] = useState();
+
   return (
     <nav className="my-11">
       <div className="text-black font-sans text-lg ">
-        <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto ">
-          <li>
-            <Link className="hover:text-teal-400" href="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-teal-400" href="#Aboutme">
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-teal-400" href="#Portfolio">
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:text-teal-400" href="/posts/first-post">
-              Blog
-            </Link>
-          </li>
-        </ul>
+        {MENU_LIST.map((href, text) => {
+          return (
+            <ul className="flex items-center list-none w-3/6 h-full justify-around mx-auto ">
+              <Link className="hover:text-teal-400" href={href.href}>
+                <li key={text}> {href.text}</li>
+              </Link>
+            </ul>
+          );
+        })}
       </div>
     </nav>
   );
 };
 
-export default Navigation;
+export default NavBar;

@@ -14,11 +14,13 @@ const NavBar = (): ReactElement => {
       <div className="text-black font-sans text-lg ">
         {MENU_LIST.map((link, idx) => {
           return (
-            <ul className="flex items-center list-none w-full h-full justify-around mx-auto">
-              <Link className=" hover:text-teal-400" href={link.path}>
-                <li key={idx}> {link.name}</li>
-              </Link>
-            </ul>
+            <div className="flex items-center list-none w-full h-full justify-around mx-auto">
+              <div key={idx}>
+                <Link className=" hover:text-teal-400" href={link.path}>
+                  {link.name}
+                </Link>
+              </div>
+            </div>
           );
         })}
       </div>

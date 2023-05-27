@@ -14,7 +14,7 @@ const NavBar = (): ReactElement => {
       <div className="text-black font-sans text-lg ">
         {MENU_LIST.map((link, idx) => {
           return (
-            <div key={idx} className="inline-block ps-10">
+            <div key={idx} className="items-center flex-wrap p-3 inline-flex ">
               <Link className="hover:text-teal-400" href={link.path}>
                 {link.name}
               </Link>

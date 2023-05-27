@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { ReactElement } from "react";
 
-interface Props {
-  name: string;
-  path: string;
-  id: number;
-}
 const MENU_LIST = [
   { name: "Home", path: "/" },
   { name: "About Me", path: "/aboutMe" },
@@ -13,7 +8,7 @@ const MENU_LIST = [
   { name: "Blog", path: "/blog" },
 ];
 
-const NavBar = ({ name, path, id }: Props): ReactElement => {
+const NavBar = (): ReactElement => {
   return (
     <nav className="my-11">
       <div className="text-black font-sans text-lg ">

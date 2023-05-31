@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState } from "react";
 import { ReactElement } from "react";
 
 const MENU_LIST = [
@@ -9,6 +10,9 @@ const MENU_LIST = [
 ];
 
 const NavBar = (): ReactElement => {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <nav className="my-11">
       <div className="text-black font-sans text-lg ">

@@ -11,7 +11,7 @@ const MENU_LIST = [
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
-  // const [activeIdx, setActiveIdx] = useState(-1);
+  const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
     <nav className="my-11">

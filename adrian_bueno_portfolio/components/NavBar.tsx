@@ -12,6 +12,7 @@ const MENU_LIST = [
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
+
   const handleClick = useCallback(() => {
     setOpenMenu((prevState) => {
       return !prevState;
@@ -42,15 +43,15 @@ const NavBar = (): ReactElement => {
       {openMenu && (
         <div className="md:hidden fixed top-5 right-0 bg-gray-400 text-white p-4">
           <div className="flex flex-col gap-5">
-          {MENU_LIST.map((link) => {
-            return (
-              <div key={link.name} className="p-3 inline-flex">
-                <Link className="hover:text-teal-400" href={link.path}>
-                  {link.name}
-                </Link>
-              </div>
-            );
-          })}
+            {MENU_LIST.map((link) => {
+              return (
+                <div key={link.name} className="p-3 inline-flex">
+                  <Link className="hover:text-teal-400" href={link.path}>
+                    {link.name}
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}

@@ -39,9 +39,9 @@ const NavBar = (): ReactElement => {
       >
         <div className="flex lg:hidden">
           <div className="space-y-1">
-            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
-            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
-            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
+            <span className="block w-8 h-0.5 bg-white"></span>
+            <span className="block w-8 h-0.5 bg-white"></span>
+            <span className="block w-8 h-0.5 bg-white"></span>
           </div>
         </div>
       </div>

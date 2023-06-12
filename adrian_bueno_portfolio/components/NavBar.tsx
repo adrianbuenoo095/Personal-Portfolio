@@ -10,9 +10,8 @@ const MENU_LIST = [
 ];
 
 const NavBar = (): ReactElement => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(-1);
-
+  const [openMenu, setOpenMenu] = useState(false); 
+  
   const handleClick = useCallback(() => {
     setOpenMenu((prevState) => {
       return !prevState;

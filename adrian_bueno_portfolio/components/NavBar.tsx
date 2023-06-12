@@ -10,8 +10,8 @@ const MENU_LIST = [
 ];
 
 const NavBar = (): ReactElement => {
-  const [openMenu, setOpenMenu] = useState(false); 
-  
+  const [openMenu, setOpenMenu] = useState(false);
+
   const handleClick = useCallback(() => {
     setOpenMenu((prevState) => {
       return !prevState;
@@ -34,10 +34,16 @@ const NavBar = (): ReactElement => {
         </div>
       </nav>
       <div
-        className="md:hidden fixed top-0 right-0 bg-gray-400 text-white"
+        className="md:hidden fixed top-3 right-0  text-white"
         onClick={handleClick}
       >
-        Burger Menu
+        <div className="flex lg:hidden">
+          <div className="space-y-1">
+            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
+            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
+            <span className="block w-8 h-0.5 bg-white animate-pulse"></span>
+          </div>
+        </div>
       </div>
       {openMenu && (
         <div className="md:hidden fixed top-5 right-0 bg-gray-400 text-white p-4">

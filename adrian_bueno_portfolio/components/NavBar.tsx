@@ -34,7 +34,7 @@ const NavBar = (): ReactElement => {
         </div>
       </nav>
       <div
-        className="md:hidden fixed top-3 right-0  text-white"
+        className="md:hidden fixed top-3 right-4  text-white"
         onClick={handleClick}
       >
         <div className="flex lg:hidden">

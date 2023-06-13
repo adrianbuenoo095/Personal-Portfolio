@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { useCallback, useState } from "react";
-import { ReactElement } from "react";
+import { useCallback, useState, ReactElement } from "react";
 import Burger from "./Burger";
 
 const MENU_LIST = [

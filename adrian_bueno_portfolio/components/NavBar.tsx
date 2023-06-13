@@ -38,7 +38,7 @@ const NavBar = (): ReactElement => {
         onClick={handleClick}
       >
         <div className="flex lg:hidden">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <span className="block w-8 h-0.5 bg-white"></span>
             <span className="block w-8 h-0.5 bg-white"></span>
             <span className="block w-8 h-0.5 bg-white"></span>

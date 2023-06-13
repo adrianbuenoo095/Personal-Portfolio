@@ -1,6 +1,8 @@
 import React from "react";
 import { ReactElement } from "react";
 
+//https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
+
 const Burger = (): ReactElement => {
   return (
     <>

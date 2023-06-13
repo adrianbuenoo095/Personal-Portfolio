@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import { ReactElement } from "react";
+import Burger from "./Burger";
 
 const MENU_LIST = [
   { name: "Home", path: "/" },
@@ -37,13 +38,7 @@ const NavBar = (): ReactElement => {
         className="md:hidden fixed top-3 right-4  text-white"
         onClick={handleClick}
       >
-        <div className="flex lg:hidden">
-          <div className="space-y-1.5">
-            <div className="block w-8 h-0.5 bg-white"></div>
-            <div className="block w-8 h-0.5 bg-white"></div>
-            <div className="block w-8 h-0.5 bg-white"></div>
-          </div>
-        </div>
+        <Burger />
       </div>
       {openMenu && (
         <div className="md:hidden fixed top-5 right-0 bg-gray-400 text-white p-4">

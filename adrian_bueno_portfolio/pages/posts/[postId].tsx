@@ -9,7 +9,7 @@ export default function FirstPost() {
       <button
         className="bg-lime-400"
         type="button"
-        onClick={() => router.push("/")}
+        onClick={() => router.back()}
       >
         back
       </button>

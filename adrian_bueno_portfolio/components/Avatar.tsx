@@ -1,15 +1,15 @@
+import Image from "next/image";
+
 type Props = {
   person: { name: string; imageId: string };
   size: number;
 };
 
-let pocman = "assets/images/pocman_thick_version.png";
-
 const Avatar = ({ person, size }: Props) => {
   return (
-    <img
+    <Image
       className="avatar"
-      src={pocman}
+      src="/images/pocman_thick_version.png"
       alt={person.name}
       width={size}
       height={size}

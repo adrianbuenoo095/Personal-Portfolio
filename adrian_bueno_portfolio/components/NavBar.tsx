@@ -17,7 +17,7 @@ const NavBar = (): ReactElement => {
       return !prevState;
     });
   }, []);
-
+  
   return (
     <>
       <nav className="my-11 hidden md:block">

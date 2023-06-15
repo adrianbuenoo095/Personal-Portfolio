@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type Props = {
-  person: { name: string; imageId: string };
+  person: { name: string; };
   size: number;
 };
 
@@ -24,7 +24,6 @@ const Profile = () => {
         size={400}
         person={{
           name: "The pocman",
-          imageId: "rdjkf2",
         }}
       />
     </div>

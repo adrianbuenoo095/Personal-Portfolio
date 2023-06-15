@@ -20,14 +20,9 @@ let bgImage = "/images/backgroundImage.jpg";
 
 const Header = (): ReactElement => {
   return (
-    <div>
+    <>
       <Head>
         <title>Adrian Bueno Portfolio</title>
-        <meta
-          property="og:title"
-          content="Adrian Bueno Portfolio"
-          key="title"
-        />
       </Head>
       <div
         className="flex flex-col justify-center items-center h-screen bg-cover"
@@ -38,7 +33,7 @@ const Header = (): ReactElement => {
         </h1>
         <Button />
       </div>
-    </div>
+    </>
   );
 };
 

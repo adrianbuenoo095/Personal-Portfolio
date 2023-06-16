@@ -19,14 +19,12 @@ const Avatar = ({ person, size }: Props) => {
 
 const Profile = () => {
   return (
-    <>
-      <Avatar
-        size={400}
-        person={{
-          name: "The pocman",
-        }}
-      />
-    </>
+    <Avatar
+      size={400}
+      person={{
+        name: "The pocman",
+      }}
+    />
   );
 };
 

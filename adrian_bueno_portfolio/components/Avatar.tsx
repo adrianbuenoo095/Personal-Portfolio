@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type Props = {
-  person: { name: string; };
+  person: { name: string };
   size: number;
 };
 
@@ -19,14 +19,14 @@ const Avatar = ({ person, size }: Props) => {
 
 const Profile = () => {
   return (
-    <div>
+    <>
       <Avatar
         size={400}
         person={{
           name: "The pocman",
         }}
       />
-    </div>
+    </>
   );
 };
 

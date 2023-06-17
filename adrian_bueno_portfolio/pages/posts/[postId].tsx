@@ -14,7 +14,7 @@ export default function FirstPost() {
           type="button"
           onClick={() => router.back()}
         >
-          back
+          Take me back
         </button>
       </div>
     </>

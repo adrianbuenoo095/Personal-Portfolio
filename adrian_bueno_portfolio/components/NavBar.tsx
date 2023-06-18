@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useCallback, useState, ReactElement } from "react";
 import Burger from "./Burger";
-import { scrollIntoTheView } from "./common/scrollIntoTheView";
+
 const MENU_LIST = [
   { name: "Home", path: "/" },
   { name: "About Me", path: "/aboutMe" },
@@ -27,6 +27,7 @@ const NavBar = (): ReactElement => {
               <div key={link.name} className="p-3 inline-flex">
                 <Link className="hover:text-teal-400" href={link.path}>
                   {link.name}
+
                 </Link>
               </div>
             );

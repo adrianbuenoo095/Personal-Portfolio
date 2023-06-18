@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useCallback, useState, ReactElement } from "react";
 import Burger from "./Burger";
-
+import { scrollIntoTheView } from "./common/scrollIntoTheView";
 const MENU_LIST = [
   { name: "Home", path: "/" },
   { name: "About Me", path: "/aboutMe" },

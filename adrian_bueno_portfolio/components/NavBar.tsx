@@ -27,7 +27,6 @@ const NavBar = (): ReactElement => {
               <div key={link.name} className="p-3 inline-flex">
                 <Link className="hover:text-teal-400" href={link.path}>
                   {link.name}
-
                 </Link>
               </div>
             );

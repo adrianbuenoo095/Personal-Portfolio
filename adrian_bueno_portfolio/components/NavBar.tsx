@@ -56,7 +56,17 @@ const NavBar = (): ReactElement => {
             {MENU_LIST.map((link) => {
               return (
                 <div key={link.name} className="p-3 inline-flex">
-                  <Link className="hover:text-teal-400" href={link.path}>
+                  <Link
+                    className="hover:text-teal-400"
+                    href={link.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (link.id) {
+                        scrollIntoTheView(link.id);
+                      }
+                      console.log(link.id);
+                    }}
+                  >
                     {link.name}
                   </Link>
                 </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useCallback, useState, ReactElement } from "react";
 import Burger from "./Burger";
+import { scrollIntoTheView } from "./common/scrollIntoTheView";
 
 const MENU_LIST = [
   { name: "Home", path: "/" },
@@ -17,7 +18,7 @@ const NavBar = (): ReactElement => {
       return !prevState;
     });
   }, []);
-  
+
   return (
     <>
       <nav className="my-11 hidden md:block">
@@ -25,7 +26,16 @@ const NavBar = (): ReactElement => {
           {MENU_LIST.map((link) => {
             return (
               <div key={link.name} className="p-3 inline-flex">
-                <Link className="hover:text-teal-400" href={link.path}>
+                <Link
+                  className="hover:text-teal-400"
+                  href={link.path}
+                  onClick={(e) => {
+                    e.preventDefault;
+                    scrollIntoTheView("AboutMe");
+                    console.log(link.name);
+                  }}
+                  scroll={false}
+                >
                   {link.name}
                 </Link>
               </div>

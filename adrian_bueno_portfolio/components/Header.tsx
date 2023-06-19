@@ -23,7 +23,7 @@ const Header = (): ReactElement => {
         <title>Adrian Bueno Portfolio</title>
       </Head>
       <div
-        id="Header"
+        id="Home"
         className="flex flex-col justify-center items-center w-screen h-screen bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >

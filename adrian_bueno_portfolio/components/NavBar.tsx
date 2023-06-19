@@ -4,9 +4,9 @@ import Burger from "./Burger";
 import { scrollIntoTheView } from "./common/scrollIntoTheView";
 
 const MENU_LIST = [
-  { name: "Home", path: "/" },
-  { name: "About Me", path: "/aboutMe" },
-  { name: "Portfolio", path: "/portfolio" },
+  { name: "Home", path: "/", id: "Home" },
+  { name: "About Me", path: "/aboutMe", id: "AboutMe" },
+  { name: "Portfolio", path: "/portfolio", id: "Portfolio" },
   { name: "Blog", path: "/blog" },
 ];
 
@@ -30,11 +30,12 @@ const NavBar = (): ReactElement => {
                   className="hover:text-teal-400"
                   href={link.path}
                   onClick={(e) => {
-                    e.preventDefault;
-                    scrollIntoTheView("AboutMe");
-                    console.log(link.name);
+                    e.preventDefault();
+                    if (link.id) {
+                      scrollIntoTheView(link.id);
+                    }
+                    console.log(link.id);
                   }}
-                  scroll={false}
                 >
                   {link.name}
                 </Link>

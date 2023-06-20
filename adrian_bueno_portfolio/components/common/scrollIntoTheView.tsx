@@ -4,7 +4,7 @@ export const scrollIntoTheView = (id: string) => {
   if (!element) {
     return;
   }
-  
+
   element.scrollIntoView({
     behavior: "smooth",
     block: "start",

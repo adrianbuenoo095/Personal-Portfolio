@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import Profile from "./Avatar";
+import Profile from "./Profile";
 
 const AboutMe = (): ReactElement => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = (): ReactElement => {
         <div className="py-5">
           <h1 className="text-orange-600 font-bold text-8xl text-center uppercase">
             Who is the Pocman?
-            <Profile />
+            <Profile /> 
           </h1>
           <p className="tracking-wide text-lg">
             The Pocman is an Instagram account that features artwork and comics

@@ -4,7 +4,7 @@ import Profile from "./Profile";
 const AboutMe = (): ReactElement => {
   return (
     <>
-      <div id="AboutMe" className=" w-screen h-screen bg-yellow-400">
+      <div id="AboutMe" className=" w-screen h-screen bg-yellow">
         <div className="py-5">
           <h1 className="text-orange-600 font-bold text-8xl text-center uppercase">
             Who is the Pocman?

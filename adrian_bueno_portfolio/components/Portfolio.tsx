@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 const Portfolio = (): ReactElement => {
   return (
     <>
-      <div id="Portfolio" className="bg-green w-screen h-screen text-center">
+      <div id="Portfolio" className="bg-green w-screen max-w-full h-screen text-center">
         <h1>Adrian&apos;s Work</h1>
         <div className="skills-set">
           <div>

@@ -24,7 +24,7 @@ const Header = (): ReactElement => {
       </Head>
       <div
         id="Home"
-        className="flex flex-col justify-center items-center h-screen bg-cover"
+        className="flex flex-col justify-center items-center  max-w-full h-screen bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <h1 className="text-4xl font-bold text-white">

@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 
 const Blog = (): ReactElement => {
   return (
-    <div className="bg-gray w-screen h-screen text-red-900">
+    <div id="Blog" className="bg-gray w-screen h-screen text-red-900">
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam

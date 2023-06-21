@@ -7,7 +7,7 @@ let Button = () => {
   return (
     <button
       onClick={() => router.push("/posts/first-post")}
-      className="mt-6 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg "
+      className="mt-6 px-4 py-2 bg-blue hover:bg-orange text-white font-bold rounded-lg "
     >
       Learn more
     </button>

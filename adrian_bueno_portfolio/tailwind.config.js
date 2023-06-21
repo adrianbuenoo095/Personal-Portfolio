@@ -15,6 +15,7 @@ module.exports = {
       'lg': '1440px'
     },
     colors: {
+      'white': '#f8fafc',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',

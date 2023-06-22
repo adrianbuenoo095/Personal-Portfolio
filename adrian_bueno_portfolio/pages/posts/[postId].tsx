@@ -7,10 +7,10 @@ export default function FirstPost() {
 
   return (
     <>
-      <div className=" h-screen w-screen bg-red-500">
+      <div className=" h-screen w-screen bg-pink">
         <h1>First Post</h1>
         <button
-          className="bg-lime-400"
+          className="bg-orange"
           type="button"
           onClick={() => router.back()}
         >

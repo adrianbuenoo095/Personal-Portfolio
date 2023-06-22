@@ -27,7 +27,7 @@ const NavBar = (): ReactElement => {
             return (
               <div key={link.name} className="p-3 inline-flex">
                 <Link
-                  className="hover:text-teal-400"
+                  className="hover:text-pink"
                   href={link.path}
                   onClick={(e) => {
                     e.preventDefault();
@@ -51,13 +51,13 @@ const NavBar = (): ReactElement => {
         <Burger />
       </div>
       {openMenu && (
-        <div className="md:hidden fixed top-5 right-0 bg-gray-400 text-white p-4">
+        <div className="md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4">
           <div className="flex flex-col gap-5">
             {MENU_LIST.map((link) => {
               return (
                 <div key={link.name} className="p-3 inline-flex">
                   <Link
-                    className="hover:text-teal-400"
+                    className="hover:text-pink"
                     href={link.path}
                     onClick={(e) => {
                       e.preventDefault();

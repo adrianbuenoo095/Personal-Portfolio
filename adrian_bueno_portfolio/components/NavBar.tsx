@@ -34,7 +34,6 @@ const NavBar = (): ReactElement => {
                     if (link.id) {
                       scrollIntoTheView(link.id);
                     }
-                    console.log(link.id);
                   }}
                 >
                   {link.name}
@@ -64,7 +63,6 @@ const NavBar = (): ReactElement => {
                       if (link.id) {
                         scrollIntoTheView(link.id);
                       }
-                      console.log(link.id);
                     }}
                   >
                     {link.name}

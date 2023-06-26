@@ -14,9 +14,8 @@ let Button = () => {
   );
 };
 
-let bgImage = "/images/backgroundImage.jpg";
-
 const Header = (): ReactElement => {
+  let bgImage = "/images/backgroundImage.jpg";
   return (
     <>
       <Head>

@@ -28,7 +28,7 @@ const Header = (): ReactElement => {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <h1 className="text-4xl font-bold text-white">
-          Hello, I am Adrian Bueno also known as the pocman.
+          Hello, I am Adrian Bueno
         </h1>
         <Button />
       </div>

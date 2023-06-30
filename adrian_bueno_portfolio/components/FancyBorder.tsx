@@ -1,38 +1,31 @@
-import { ReactElement, useReducer } from "react";
-
-interface Button {
-  onClick: () => {};
-  children: Array<string>;
-  icon: Element;
-}
-interface Props {
-  children: Array<string>;
-  color: string;
-}
+import { useReducer } from "react";
 
 interface Props {
   type: string;
 }
 
-const reducer = (state: any, action: Props) => {
+function reducer(state: string, action: Props) {
   if (action.type === "incremented_age") {
     return {
       age: state.age + 1,
     };
   }
-};
+  throw Error("Unknown action.");
+}
 
-const MyComponent = (): ReactElement => {
-  const [state, dispatch] = useReducer(reducer, { age: 43 });
+export default function Counter() {
+  const [state, dispatch] = useReducer(reducer, { age: 42 });
 
-  return <div className="bg-light"></div>;
-};
-
-const Button = ({ onClick, children }: Button) => (
-  <button onClick={onClick}>{children}</button>
-);
-
-const FancyBorder = ({ children, color }: Props): ReactElement => {
-  return <div className={`'FancyBorder FanyBorder-'${color}`}>{children}</div>;
-};
-export default FancyBorder;
+  return (
+    <>
+      <button
+        onClick={() => {
+          dispatch({ type: "incremented_age" });
+        }}
+      >
+        Increment age
+      </button>
+      <p>Hello! You are {state.age}.</p>
+    </>
+  );
+}

@@ -10,16 +10,23 @@ interface Props {
   color: string;
 }
 
-const reducer = (state: any, action: {]}) => {
+interface Props {
+  type: string;
+}
 
+const reducer = (state: any, action: Props) => {
+  if (action.type === "incremented_age") {
+    return {
+      age: state.age + 1,
+    };
+  }
 };
 
 const MyComponent = (): ReactElement => {
-const [state, dispatch] = useReducer(reducer, {age:43});
+  const [state, dispatch] = useReducer(reducer, { age: 43 });
 
-
-
-} 
+  return <div className="bg-light"></div>;
+};
 
 const Button = ({ onClick, children }: Button) => (
   <button onClick={onClick}>{children}</button>

@@ -1,4 +1,4 @@
-import {  ReactElement, useReducer } from "react";
+import { ReactElement, useReducer } from "react";
 
 interface Props {
   type: string;
@@ -11,9 +11,9 @@ const reducer = (state: { age: string }, action: Props) => {
     };
   }
   throw Error("Unknown action.");
-}
+};
 
-const Counter = (): ReactElement => {
+const Counter = (): ReactElement | null => {
   const [state, dispatch] = useReducer(reducer, { age: 42 });
 
   return (
@@ -28,6 +28,6 @@ const Counter = (): ReactElement => {
       <p>Hello! You are {state.age}.</p>
     </>
   );
-}
+};
 
 export default Counter;

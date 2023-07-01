@@ -20,7 +20,7 @@ const Header = (): ReactElement => {
   return (
     <>
       <Head>
-        <title>Adrian Bueno Portfolio</title>
+        <title>Adrian Bueno</title>
       </Head>
       <div
         id="Home"

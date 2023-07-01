@@ -1,10 +1,10 @@
-import { useReducer } from "react";
+import { ReactElement, useReducer } from "react";
 
 interface Props {
   type: string;
 }
 
-function reducer(state: { age: string }, action: Props) {
+const reducer = (state: { age: string }, action: Props) => {
   if (action.type === "incremented_age") {
     return {
       age: state.age + 1,
@@ -13,7 +13,7 @@ function reducer(state: { age: string }, action: Props) {
   throw Error("Unknown action.");
 }
 
-export default function Counter() {
+const Counter = (): ReactElemente => {
   const [state, dispatch] = useReducer(reducer, { age: 42 });
 
   return (
@@ -29,3 +29,5 @@ export default function Counter() {
     </>
   );
 }
+
+export default Counter;

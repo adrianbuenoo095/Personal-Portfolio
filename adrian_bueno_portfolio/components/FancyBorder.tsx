@@ -4,7 +4,7 @@ interface Props {
   type: string;
 }
 
-function reducer(state: string, action: Props) {
+function reducer(state: { age: string }, action: Props) {
   if (action.type === "incremented_age") {
     return {
       age: state.age + 1,

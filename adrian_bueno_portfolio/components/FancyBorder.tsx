@@ -1,14 +1,14 @@
 import { ReactElement, useReducer } from "react";
 
-interface Props {
+interface Action {
   type: string;
 }
 
-const initialState = {
-  age: "",
+interface State{
+  age: number:
 };
 
-const reducer = (state: { age: string }, action: Props) => {
+const reducer = (state:State, action: Action) => {
   if (action.type === "incremented_age") {
     return {
       age: state.age + 1,

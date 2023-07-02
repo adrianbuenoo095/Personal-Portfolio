@@ -4,11 +4,11 @@ interface Action {
   type: string;
 }
 
-interface State{
-  age: number:
-};
+interface State {
+  age: number;
+}
 
-const reducer = (state:State, action: Action) => {
+const reducer = (state: State, action: Action) => {
   if (action.type === "incremented_age") {
     return {
       age: state.age + 1,
@@ -18,7 +18,7 @@ const reducer = (state:State, action: Action) => {
 };
 
 const Counter = (): ReactElement | null => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, { age: 34 });
 
   return (
     <>

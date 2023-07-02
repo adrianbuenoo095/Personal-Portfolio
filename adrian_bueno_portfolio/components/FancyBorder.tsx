@@ -5,8 +5,8 @@ interface Props {
 }
 
 const initialState = {
-  age:""
-}
+  age: "",
+};
 
 const reducer = (state: { age: string }, action: Props) => {
   if (action.type === "incremented_age") {

@@ -23,7 +23,7 @@ const Counter = (): ReactElement | null => {
   console.log(`"state:" ${state.age}`)
   return (
     <>
-      <button
+      <button className="bg-blue"
         onClick={() => {
           dispatch({ type: "incremented_age" });
         }}

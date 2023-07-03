@@ -20,7 +20,6 @@ const reducer = (state: State, action: Action) => {
 const Counter = (): ReactElement | null => {
   const [state, dispatch] = useReducer(reducer, { age: 34 });
 
-  console.log(`"state:" ${state.age}`)
   return (
     <>
       <button className="bg-blue"

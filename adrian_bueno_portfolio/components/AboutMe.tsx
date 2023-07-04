@@ -6,10 +6,10 @@ const AboutMe = (): ReactElement => {
     <>
       <div id="AboutMe" className="h-screen bg-yellow">
         <div className="py-5">
-          <h1 className="text-orange-600 font-bold text-8xl text-center uppercase">
+          <div className="text-orange-600 font-bold text-8xl text-center uppercase">
             Who is the Pocman?
             <Profile /> 
-          </h1>
+          </div>
           <p className="tracking-wide text-lg">
             The Pocman is a great instagram account that features artwork and comics
             created by an artist known as POC or &quot;Person of Color&quot;

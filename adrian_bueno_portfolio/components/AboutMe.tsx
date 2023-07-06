@@ -11,7 +11,7 @@ const AboutMe = (): ReactElement => {
             <Profile /> 
           </div>
           <p className="tracking-wide text-lg">
-            The Pocman is a great instagram account that feature artwork and comics
+            The Pocman is a great instagram account that features artwork and comics
             created by an artist known as POC or &quot;Person of Color&quot;
             man. POC man uses their platform to showcase their unique
             perspective on current events, pop culture, and everyday life

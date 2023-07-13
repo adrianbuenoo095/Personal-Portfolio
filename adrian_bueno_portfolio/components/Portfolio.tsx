@@ -12,9 +12,6 @@ const Portfolio = (): ReactElement => {
           <div>
             <h1>Illustrator</h1>
           </div>
-          <div>
-            <h1>Full-Stack</h1>
-          </div>
           <Counter/>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import Counter from "./FancyBorder";
+
 const Portfolio = (): ReactElement => {
   return (
     <>
@@ -12,7 +12,6 @@ const Portfolio = (): ReactElement => {
           <div>
             <h1>Illustrator</h1>
           </div>
-          <Counter/>
         </div>
       </div>
     </>

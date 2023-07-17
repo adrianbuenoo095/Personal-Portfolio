@@ -13,10 +13,10 @@ const Portfolio = (): ReactElement => {
         id="Portfolio"
         className="bg-green w-screen max-w-full h-screen text-center"
       >
-        <h1>Adrian&apos;s Work</h1>
+        Portfolio
         {SKILLSET.map((skill) => {
         return (
-          <div className="bg-blue flex" key={skill.name}>
+          <div className="bg-blue " key={skill.name}>
             {skill.name}
           </div>
         );

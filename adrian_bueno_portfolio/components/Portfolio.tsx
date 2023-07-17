@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 const SKILLSET = [
   { name: "Web Designer" },
   { name: "Illustror" },
-  { name: "FullStack Developers" },
+  { name: "FullStack Developer" },
 ];
 
 const Portfolio = (): ReactElement => {
@@ -15,15 +15,12 @@ const Portfolio = (): ReactElement => {
       >
         <h1>Adrian&apos;s Work</h1>
       </div>
-        {
-          SKILLSET.map((skill)=>{
-            <div className="bg-blue"key={skill.name}>
-              {skill.name}
-            </div>
-            console.log(skill.name);
-          })
-        }
-     
+      {SKILLSET.map((skill) => {
+        <div className="bg-blue flex" key={skill.name}>
+          {skill.name}
+        </div>;
+        console.log(skill.name);
+      })}
     </>
   );
 };

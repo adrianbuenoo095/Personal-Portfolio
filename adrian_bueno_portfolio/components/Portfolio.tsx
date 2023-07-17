@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 const SKILLSET = [
   { name: "Web Designer" },
-  { name: "Illustror" },
+  { name: "Illustrator" },
   { name: "FullStack Developer" },
 ];
 
@@ -14,13 +14,14 @@ const Portfolio = (): ReactElement => {
         className="bg-green w-screen max-w-full h-screen text-center"
       >
         <h1>Adrian&apos;s Work</h1>
-      </div>
-      {SKILLSET.map((skill) => {
-        <div className="bg-blue flex" key={skill.name}>
-          {skill.name}
-        </div>;
-        console.log(skill.name);
+        {SKILLSET.map((skill) => {
+        return (
+          <div className="bg-blue flex" key={skill.name}>
+            {skill.name}
+          </div>
+        );
       })}
+      </div>
     </>
   );
 };

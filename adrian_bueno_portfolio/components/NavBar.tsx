@@ -7,7 +7,7 @@ const MENU_LIST = [
   { name: "Home", path: "/", id: "Home" },
   { name: "About Me", path: "/aboutMe", id: "AboutMe" },
   { name: "Portfolio", path: "/portfolio", id: "Portfolio" },
-  { name: "Blog", path: "/blog", id:"Blog" },
+  { name: "Blog", path: "/blog", id: "Blog" },
 ];
 
 const NavBar = (): ReactElement => {
@@ -31,9 +31,7 @@ const NavBar = (): ReactElement => {
                   href={link.path}
                   onClick={(e) => {
                     e.preventDefault();
-                    if (link.id) {
-                      scrollIntoTheView(link.id);
-                    }
+                    scrollIntoTheView(link.id);
                   }}
                 >
                   {link.name}

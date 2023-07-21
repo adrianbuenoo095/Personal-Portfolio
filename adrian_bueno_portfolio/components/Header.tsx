@@ -15,8 +15,8 @@ let Button = () => {
 };
 
 const Header = (): ReactElement => {
-  let bgImage = "/images/backgroundImage.jpg";
-  
+  let backgroundImage = "/images/backgroundImage.jpg";
+
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ const Header = (): ReactElement => {
       <div
         id="Home"
         className="flex flex-col justify-center items-center  max-w-full h-screen bg-cover"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <h1 className="text-4xl font-bold text-white">
           Hello, I am Adrian Bueno

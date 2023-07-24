@@ -44,6 +44,7 @@ const NavBar = (): ReactElement => {
       <div
         className="md:hidden fixed top-3 right-4  text-white"
         onClick={handleClick}
+        
       >
         <Burger />
       </div>

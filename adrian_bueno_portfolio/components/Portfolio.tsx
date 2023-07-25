@@ -14,13 +14,12 @@ const Portfolio = (): ReactElement => {
         className="bg-green w-screen max-w-full h-screen text-center"
       >
         Portfolio
-        {SKILLSET.map((skill) => {
-        return (
+        {SKILLSET.map((skill) => (
           <div className="bg-blue " key={skill.name}>
             {skill.name}
           </div>
-        );
-      })}
+        ))}
+        ;
       </div>
     </>
   );

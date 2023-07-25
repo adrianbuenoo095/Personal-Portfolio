@@ -19,7 +19,6 @@ const Portfolio = (): ReactElement => {
             {skill.name}
           </div>
         ))}
-        ;
       </div>
     </>
   );

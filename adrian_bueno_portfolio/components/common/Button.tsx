@@ -1,17 +1,11 @@
 import { useRouter } from "next/router";
-import { ReactElement, useCallback } from "react";
-
-const clickHandle = () => {
-  const router = useRouter();
-  return router.push("/posts/first-post");
-};
-
-console.log(clickHandle);
+import { ReactElement } from "react";
 
 export let Button = (): ReactElement => {
+  const router = useRouter();
   return (
     <button
-      onClick={clickHandle}
+      onClick={()=>{router.push("/posts/first-post");}}
       className="mt-6 px-4 py-2 bg-blue hover:bg-orange text-white font-bold rounded-lg "
     >
       Learn more

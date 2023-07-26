@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
-import { useCallback } from "react";
+import { ReactElement, useCallback } from "react";
 
-
-const clickHandle = useCallback(()=>{
+const clickHandle = () => {
   const router = useRouter();
-    
-  router.push("/posts/first-post")
-},[]);
+  return router.push("/posts/first-post");
+};
 
-export let Button = () => {
+console.log(clickHandle);
+
+export let Button = (): ReactElement => {
   return (
     <button
       onClick={clickHandle}

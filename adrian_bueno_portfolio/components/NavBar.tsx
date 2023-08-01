@@ -2,13 +2,8 @@ import Link from "next/link";
 import { useCallback, useState, ReactElement } from "react";
 import Burger from "./common/Burger";
 import { scrollIntoTheView } from "./common/scrollIntoTheView";
+import { menuList } from "./common/Menulist";
 
-const MENU_LIST = [
-  { name: "Home", path: "/", id: "Home" },
-  { name: "About Me", path: "/aboutMe", id: "AboutMe" },
-  { name: "Portfolio", path: "/portfolio", id: "Portfolio" },
-  { name: "Blog", path: "/blog", id: "Blog" },
-];
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,7 +18,7 @@ const NavBar = (): ReactElement => {
     <>
       <nav className="my-11 hidden md:block">
         <div className="text-black font-sans text-lg ">
-          {MENU_LIST.map((link) => {
+          {menuList.map((link) => {
             return (
               <div key={link.name} className="p-3 inline-flex">
                 <Link
@@ -50,7 +45,7 @@ const NavBar = (): ReactElement => {
       {openMenu && (
         <div className="md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4">
           <div className="flex flex-col gap-5">
-            {MENU_LIST.map((link) => {
+            {menuList.map((link) => {
               return (
                 <div key={link.name} className="p-3 inline-flex">
                   <Link

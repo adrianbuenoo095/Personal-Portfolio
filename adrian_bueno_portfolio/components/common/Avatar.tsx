@@ -8,11 +8,12 @@ interface Props {
 let pocmanFace = "/images/pocman_thick_version.png";
 
 export const Avatar = ({ person, size }: Props) => {
+  const {name} = person;
   return (
     <Image
       className="avatar"
       src={pocmanFace}
-      alt={person.name}
+      alt={name}
       width={size}
       height={size}
     />

@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ReactElement } from "react";
-import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram"
+import {
+  faInstagram,
+  faLinkedin,
+  faBehance,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = (): ReactElement => {
   const currentYear = new Date().getFullYear();
@@ -9,6 +13,8 @@ const Footer = (): ReactElement => {
     <>
       <footer id="footer" className="text-center">
         <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faBehance} />
         <p>&copy; The Pocman {currentYear}&nbsp;</p>
       </footer>
     </>

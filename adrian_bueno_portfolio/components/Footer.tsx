@@ -12,9 +12,9 @@ const Footer = (): ReactElement => {
   return (
     <>
       <footer id="footer" className="text-center">
-        <FontAwesomeIcon className="pr-4" icon={faInstagram} />
-        <FontAwesomeIcon className="pr-4" icon={faLinkedin} />
-        <FontAwesomeIcon className="pr-4" icon={faBehance} />
+        <FontAwesomeIcon className="pr-4 text-3xl	" icon={faInstagram} />
+        <FontAwesomeIcon className="pr-4 text-3xl	" icon={faLinkedin} />
+        <FontAwesomeIcon className="pr-4 text-3xl	" icon={faBehance} />
         <p>&copy; The Pocman {currentYear}&nbsp;</p>
       </footer>
     </>

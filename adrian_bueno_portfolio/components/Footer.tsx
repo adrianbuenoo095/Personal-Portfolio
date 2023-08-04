@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ReactElement } from "react";
-import {
-  faInstagram,
-  faLinkedin,
-  faBehance,
-} from "@fortawesome/free-brands-svg-icons";
+import { brandIcons } from "../lib/brandIcons";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+
+export interface BrandIconValues {
+  instagram: IconDefinition;
+  linkedin: IconDefinition;
+  behance: IconDefinition;
+}
+
 
 const Footer = (): ReactElement => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +16,10 @@ const Footer = (): ReactElement => {
   return (
     <>
       <footer id="footer" className="text-center">
-        <FontAwesomeIcon className="pr-4 text-3xl text-blue" icon={faInstagram} />
-        <FontAwesomeIcon className="pr-4 text-3xl text-blue" icon={faLinkedin} />
-        <FontAwesomeIcon className="pr-4 text-3xl text-blue" icon={faBehance} />
+        {brandIcons.map((branIcon,key)=>(
+          <FontAwesomeIcon key={key} className="pr-4 text-3xl text-blue" icon={branIcon} />
+        )
+      )}
         <p>&copy; The Pocman {currentYear}&nbsp;</p>
       </footer>
     </>

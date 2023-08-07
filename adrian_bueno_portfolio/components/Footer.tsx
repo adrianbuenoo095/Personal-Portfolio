@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ReactElement } from "react";
 import { brandIcons } from "../lib/brandIcons";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export interface BrandIconValues {
   instagram: IconDefinition;
@@ -17,7 +18,7 @@ const Footer = (): ReactElement => {
     <>
       <footer id="footer" className="text-center">
         {brandIcons.map((branIcon,key)=>(
-          <FontAwesomeIcon key={key} className="pr-4 text-3xl text-blue" icon={branIcon} />
+          <FontAwesomeIcon key={key} className="pr-4 text-3xl text-blue" icon={branIcon as IconProp} />
         )
       )}
         <p>&copy; The Pocman {currentYear}&nbsp;</p>

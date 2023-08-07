@@ -3,6 +3,6 @@ import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
 export default interface BrandIcon {
   key: keyof BrandIconValues;
-  label: string;
+  label?: string;
   icon: IconDefinition;
 }

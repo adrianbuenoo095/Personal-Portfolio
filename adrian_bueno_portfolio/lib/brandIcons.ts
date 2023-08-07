@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const brandIcons = new Array<BrandIcon>(
-  { key: "instagram", label: "Instagram", icon: faInstagram },
-  { key: "linkedin", label: "Linkedin", icon: faLinkedin },
-  { key: "behance", label: "Behance", icon: faBehance }
+  { label: "Instagram", icon: faInstagram },
+  { label: "Linkedin", icon: faLinkedin },
+  { label: "Behance", icon: faBehance }
 );

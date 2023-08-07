@@ -1,4 +1,4 @@
-import type BrandIcon from "./brandIcon";
+import type BrandIcon from "./BrandIcon";
 import {
   faInstagram,
   faLinkedin,

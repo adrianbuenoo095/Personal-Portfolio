@@ -17,8 +17,8 @@ const Footer = (): ReactElement => {
   return (
     <>
       <footer id="footer" className="text-center">
-        {brandIcons.map((branIcon,key)=>(
-          <FontAwesomeIcon key={key} className="pr-4 text-3xl text-blue" icon={branIcon as IconProp} />
+        {brandIcons.map((branIcon)=>(
+          <FontAwesomeIcon key={branIcon.label} className="pr-4 text-3xl text-blue" icon={branIcon} />
         )
       )}
         <p>&copy; The Pocman {currentYear}&nbsp;</p>

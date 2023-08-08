@@ -11,13 +11,13 @@ const instagramLink = (
 );
 
 const linkedinLink = (
-  <Link href="https://www.instagram.com/thepocman/">
+  <Link href="https://www.linkedin.com/in/adrian-bueno-08189b108/">
     <FontAwesomeIcon icon={faLinkedin} />
   </Link>
 );
 
 const behanceLink = (
-  <Link href="https://www.instagram.com/thepocman/">
+  <Link href="https://www.behance.net/thepocman">
     <FontAwesomeIcon icon={faBehance} />
   </Link>
 );

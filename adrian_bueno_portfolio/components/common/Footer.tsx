@@ -1,13 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ReactElement } from "react";
-import { faInstagram, faLinkedin, faBehance } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faBehance,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const instagramLink = (
   <Link href="https://www.instagram.com/thepocman/">
     <FontAwesomeIcon icon={faInstagram} />
   </Link>
-
 );
 
 const linkedinLink = (
@@ -28,9 +31,10 @@ const Footer = (): ReactElement => {
   return (
     <>
       <footer id="footer" className="text-center">
-        {instagramLink}
-        {linkedinLink}
-        {behanceLink}
+        <span>
+          {instagramLink}{linkedinLink}{behanceLink}
+        </span>
+
         <p>&copy; The Pocman {currentYear}&nbsp;</p>
       </footer>
     </>

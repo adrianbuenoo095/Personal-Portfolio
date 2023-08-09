@@ -4,7 +4,6 @@ import { Button } from "./common/Button";
 
 const Header = (): ReactElement => {
   let backgroundImage = "/images/backgroundImage.jpg";
-
   return (
     <>
       <Head>

@@ -5,7 +5,7 @@ const AboutMe = (): ReactElement => {
   return (
     <>
       <div id="AboutMe" className="h-fit bg-blue ">
-        <div>Who is the Pocman?</div>
+        <div className="flex justify-center text-lg">Who is the Pocman?</div>
         <Profile />
         <p className="tracking-wide text-lg text-ellipsis">
           The Pocman is a great instagram account that features artwork and

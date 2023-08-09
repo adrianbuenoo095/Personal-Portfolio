@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 export default function FirstPost() {
   const router = useRouter();
   const id = router.query.id;
-  console.log(id);
+
+  console.log(`hello ${id}`);
 
   if (id === null) {
     return <h1>Loading</h1>;
@@ -16,6 +17,7 @@ export default function FirstPost() {
         <h1>First Post {id}</h1>
         <Link href="/">Take me back</Link>
       </div>
+      f
     </>
   );
 }

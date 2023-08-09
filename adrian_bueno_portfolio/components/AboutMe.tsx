@@ -18,7 +18,6 @@ const AboutMe = (): ReactElement => {
           Instagram, the Pocman has become a prominent voice in the online art
           community, inspiring and engaging followers from all walks of life.
         </p>
-       
       </div>
     </>
   );

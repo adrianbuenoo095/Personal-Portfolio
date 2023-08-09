@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { useCallback, useState, ReactElement } from "react";
+import { ReactElement, useCallback, useState } from "react";
+import { menuList } from "../lib/MenuList";
 import Burger from "./common/Burger";
 import { scrollIntoTheView } from "./common/scrollIntoTheView";
-import { menuList } from "./common/Menulist";
-
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);

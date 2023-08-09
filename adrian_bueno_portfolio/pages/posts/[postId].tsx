@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 export default function FirstPost() {
   const router = useRouter();
-  const id = router.query.id;
+  const id = router.query.postId;
 
   console.log(`hello ${id}`);
 

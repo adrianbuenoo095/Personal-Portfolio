@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { ReactElement } from "react";
 import {
+  faBehance,
   faInstagram,
   faLinkedin,
-  faBehance,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import type { ReactElement } from "react";
 
 const instagramLink = (
   <Link

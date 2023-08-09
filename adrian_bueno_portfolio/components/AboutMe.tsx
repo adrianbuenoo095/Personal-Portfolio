@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import Profile from "./Profile";
 
 const AboutMe = (): ReactElement => {
   return (

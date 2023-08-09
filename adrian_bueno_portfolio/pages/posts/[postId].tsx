@@ -17,7 +17,6 @@ export default function FirstPost() {
         <h1>First Post {id}</h1>
         <Link href="/">Take me back</Link>
       </div>
-      f
     </>
   );
 }

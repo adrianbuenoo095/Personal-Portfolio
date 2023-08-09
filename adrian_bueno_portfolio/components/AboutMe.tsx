@@ -5,9 +5,8 @@ const AboutMe = (): ReactElement => {
   return (
     <>
       <div id="AboutMe" className="h-fit bg-blue ">
-        <div className="flex justify-center text-lg">Who is the Pocman?</div>
-        <Profile />
-        <p className="tracking-wide text-lg text-ellipsis">
+        <div className="flex justify-center text-lg">Who is the Pocman? </div>
+        <p className="tracking-wide text-lg">
           The Pocman is a great instagram account that features artwork and
           comics created by an artist known as POC or &quot;Person of
           Color&quot; man. POC man uses their platform to showcase their unique

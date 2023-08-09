@@ -6,6 +6,7 @@ import { scrollIntoTheView } from "./common/scrollIntoTheView";
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = useCallback(() => {
     setOpenMenu((prevState) => {

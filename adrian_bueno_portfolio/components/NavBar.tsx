@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ReactElement, useCallback, useState } from "react";
+import { ReactElement, useCallback, useEffect, useState } from "react";
 import { menuList } from "../lib/common /MenuList";
 import { scrollIntoTheView } from "../lib/common /helpers/scrollIntoTheView";
 import Burger from "./common/Burger";
@@ -13,6 +13,28 @@ const NavBar = (): ReactElement => {
       return !prevState;
     });
   }, []);
+
+  const controlNavBar = () => {
+    if (typeof window !== "undefined") {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setOpenMenu(true);
+      } else {
+        setOpenMenu(false);
+      }
+      setLastScrollY(currentScrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavBar);
+
+      return () => {
+        window.removeEventListener("scroll", controlNavBar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
     <>

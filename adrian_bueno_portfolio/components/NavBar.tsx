@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
 import { menuList } from "../lib/common /MenuList";
-import { scrollIntoTheView } from "../lib/common /scrollIntoTheView";
+import { scrollIntoTheView } from "../lib/common /helpers/scrollIntoTheView";
 import Burger from "./common/Burger";
 
 const NavBar = (): ReactElement => {

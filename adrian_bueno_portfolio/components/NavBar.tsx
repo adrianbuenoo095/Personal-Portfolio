@@ -17,24 +17,25 @@ const NavBar = (): ReactElement => {
   return (
     <>
       <nav className="my-11 hidden md:block">
-        <div className="text-black font-sans text-lg ">
-          {menuList.map((link) => {
-            return (
-              <div key={link.name} className="p-3 inline-flex">
-                <Link
-                  className="hover:text-pink"
-                  href={link.path}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollIntoTheView(link.id);
-                  }}
-                >
-                  {link.name}
-                </Link>
-              </div>
-            );
-          })}
-        </div>
+        {menuList.map((link) => {
+          return (
+            <div
+              key={link.name}
+              className="p-3 inline-flex text-black font-sans text-lg "
+            >
+              <Link
+                className="hover:text-pink"
+                href={link.path}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollIntoTheView(link.id);
+                }}
+              >
+                {link.name}
+              </Link>
+            </div>
+          );
+        })}
       </nav>
       <div
         className="md:hidden fixed top-3 right-4  text-white"

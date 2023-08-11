@@ -28,8 +28,6 @@ const NavBar = (): ReactElement => {
       setOpenMenu(shouldShowNavBar);
       setLastScrollY(currentScrollY);
     }
-
-    return <h1 className="my-11 block text-lg text-blue"> Hello world</h1>;
   };
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -41,6 +39,7 @@ const NavBar = (): ReactElement => {
     }
   }, []);
 
+  // return <h1 className="my-11 block text-lg text-blue"> Hello world</h1>;
   return (
     <>
       <nav className="my-11 hidden md:block">

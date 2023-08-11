@@ -18,9 +18,9 @@ const NavBar = (): ReactElement => {
     if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY) {
-        setOpenMenu(false);
-      } else {
         setOpenMenu(true);
+      } else {
+        setOpenMenu(false);
       }
       console.log(setLastScrollY(currentScrollY));
 

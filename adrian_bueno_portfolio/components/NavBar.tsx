@@ -17,17 +17,20 @@ const NavBar = (): ReactElement => {
   const controlNavBar = () => {
     if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setOpenMenu(true);
-      } else {
-        setOpenMenu(false);
-      }
-      console.log(setLastScrollY(currentScrollY));
+      console.log("hello world ");
 
+      // Calculate the scroll direction based on the change in scroll position
+      const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
+
+      // Calculate whether to show or hide the NavBar based on scroll direction
+      const shouldShowNavBar = scrollDirection === "up" || currentScrollY < 50;
+
+      setOpenMenu(shouldShowNavBar);
       setLastScrollY(currentScrollY);
     }
-  };
 
+    return <h1 className="my-11 block text-lg text-blue"> Hello world</h1>;
+  };
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavBar);
@@ -36,7 +39,7 @@ const NavBar = (): ReactElement => {
         window.removeEventListener("scroll", controlNavBar);
       };
     }
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <>

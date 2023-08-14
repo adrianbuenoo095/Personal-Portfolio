@@ -19,12 +19,10 @@ const NavBar = (): ReactElement => {
       const currentScrollY = window.scrollY;
       console.log("hello world ");
 
-      // Calculate the scroll direction based on the change in scroll position
       const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
 
       console.log(`hello: ${scrollDirection}`);
 
-      // Calculate whether to show or hide the NavBar based on scroll direction
       const shouldShowNavBar = scrollDirection === "up" || currentScrollY < 50;
 
       setOpenMenu(shouldShowNavBar);

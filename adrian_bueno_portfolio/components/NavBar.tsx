@@ -29,6 +29,7 @@ const NavBar = (): ReactElement => {
       setLastScrollY(currentScrollY);
     }
   };
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavBar);

@@ -17,6 +17,8 @@ const NavBar = (): ReactElement => {
   const controlNavBar = () => {
     if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
+      console.log(`this is test: ${currentScrollY}`);
+
       console.log("hello world ");
 
       const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
@@ -39,8 +41,6 @@ const NavBar = (): ReactElement => {
       };
     }
   }, []);
-
-  // return <h1 className="my-11 block text-lg text-blue"> Hello world</h1>;
   return (
     <>
       <nav className="my-11 hidden md:block">

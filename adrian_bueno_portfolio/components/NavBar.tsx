@@ -16,6 +16,7 @@ const NavBar = (): ReactElement => {
 
   const controlNavBar = useCallback(() => {
     const currentScrollY = window.scrollY;
+
     if (typeof window !== "undefined") {
       if (currentScrollY > lastScrollY) {
         setOpenMenu(false);
@@ -33,6 +34,7 @@ const NavBar = (): ReactElement => {
       };
     }
   }, [controlNavBar]);
+
   return (
     <>
       <nav className="my-11 hidden md:block">

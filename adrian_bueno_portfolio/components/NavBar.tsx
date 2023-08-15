@@ -19,8 +19,6 @@ const NavBar = (): ReactElement => {
       const currentScrollY = window.scrollY;
       console.log(`this is test: ${currentScrollY}`);
 
-      console.log("hello world ");
-
       const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
 
       console.log(`hello: ${scrollDirection}`);

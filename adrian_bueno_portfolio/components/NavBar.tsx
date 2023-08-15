@@ -1,7 +1,7 @@
+import { menuList } from "@/lib/common /MenuList";
+import { scrollIntoTheView } from "@/lib/common /helpers/scrollIntoTheView";
 import Link from "next/link";
 import { ReactElement, useCallback, useEffect, useState } from "react";
-import { menuList } from "../lib/common /MenuList";
-import { scrollIntoTheView } from "../lib/common /helpers/scrollIntoTheView";
 import Burger from "./common/Burger";
 
 const NavBar = (): ReactElement => {
@@ -14,21 +14,15 @@ const NavBar = (): ReactElement => {
     });
   }, []);
 
-  const controlNavBar = () => {
+  const controlNavBar = useCallback(() => {
+    const currentScrollY = window.scrollY;
     if (typeof window !== "undefined") {
-      const currentScrollY = window.scrollY;
-      console.log(`this is test: ${currentScrollY}`);
-
-      const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
-
-      console.log(`hello: ${scrollDirection}`);
-
-      const shouldShowNavBar = scrollDirection === "up" || currentScrollY < 50;
-
-      setOpenMenu(shouldShowNavBar);
+      if (currentScrollY > lastScrollY) {
+        setOpenMenu(false);
+      }
       setLastScrollY(currentScrollY);
     }
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -38,7 +32,7 @@ const NavBar = (): ReactElement => {
         window.removeEventListener("scroll", controlNavBar);
       };
     }
-  }, []);
+  }, [controlNavBar]);
   return (
     <>
       <nav className="my-11 hidden md:block">

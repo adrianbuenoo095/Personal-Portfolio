@@ -37,7 +37,7 @@ const NavBar = (): ReactElement => {
 
   return (
     <>
-      <nav className="my-11 hidden md:block">
+      <nav className="my-11 hidden md:block ">
         {menuList.map((link) => {
           return (
             <div
@@ -59,7 +59,7 @@ const NavBar = (): ReactElement => {
         })}
       </nav>
       <div
-        className="md:hidden fixed top-3 right-4  text-white"
+        className="md:hidden fixed top-3 right-4  text-white "
         onClick={handleClick}
       >
         <Burger />

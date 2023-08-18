@@ -1,8 +1,6 @@
 import { menuList } from "@/lib/common /MenuList";
-import { scrollIntoTheView } from "@/lib/common /helpers/scrollIntoTheView";
 import Link from "next/link";
 import { ReactElement, useCallback, useEffect, useState } from "react";
-import Burger from "./common/Burger";
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -37,7 +35,14 @@ const NavBar = (): ReactElement => {
 
   return (
     <>
-      <nav className="my-11 hidden md:block ">
+      <nav className="block">
+        {menuList.map((link) => (
+          <Link href={link.path} key="link">
+            {link.name}
+          </Link>
+        ))}
+      </nav>
+      {/* <nav className="my-11 hidden md:block ">
         {menuList.map((link) => {
           return (
             <div
@@ -87,7 +92,7 @@ const NavBar = (): ReactElement => {
             })}
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

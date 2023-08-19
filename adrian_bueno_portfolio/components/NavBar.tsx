@@ -44,7 +44,7 @@ const NavBar = (): ReactElement => {
         ))}
       </nav>
       <div>
-        </Burger>
+        <Burger />
       </div>
       {/* <nav className="my-11 hidden md:block ">
         {menuList.map((link) => {

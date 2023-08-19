@@ -1,6 +1,7 @@
 import { menuList } from "@/lib/common /MenuList";
 import Link from "next/link";
 import { ReactElement, useCallback, useEffect, useState } from "react";
+import Burger from "./common/Burger";
 
 const NavBar = (): ReactElement => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -42,6 +43,9 @@ const NavBar = (): ReactElement => {
           </Link>
         ))}
       </nav>
+      <div>
+        </Burger>
+      </div>
       {/* <nav className="my-11 hidden md:block ">
         {menuList.map((link) => {
           return (

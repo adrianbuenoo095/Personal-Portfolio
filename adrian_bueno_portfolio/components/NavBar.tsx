@@ -1,4 +1,5 @@
 import { menuList } from "@/lib/common /MenuList";
+import { scrollIntoTheView } from "@/lib/common /helpers/scrollIntoTheView";
 import Link from "next/link";
 import { ReactElement, useCallback, useEffect, useState } from "react";
 import Burger from "./common/Burger";
@@ -38,9 +39,18 @@ const NavBar = (): ReactElement => {
     <>
       <nav className="block">
         {menuList.map((link) => (
-          <Link href={link.path} key="link">
-            {link.name}
-          </Link>
+          <div className="p-3 inline-flex text-black font-sans text-lg hover:text-pink">
+            <Link
+              href={link.path}
+              key="link"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollIntoTheView(link.id);
+              }}
+            >
+              {link.name}
+            </Link>
+          </div>
         ))}
       </nav>
       <div>
@@ -54,7 +64,7 @@ const NavBar = (): ReactElement => {
               className="p-3 inline-flex text-black font-sans text-lg "
             >
               <Link
-                className="hover:text-pink"
+                className="hover:text-pink"Rrl
                 href={link.path}
                 onClick={(e) => {
                   e.preventDefault();

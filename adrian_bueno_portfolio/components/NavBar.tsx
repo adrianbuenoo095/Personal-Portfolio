@@ -16,6 +16,7 @@ const NavBar = (): ReactElement => {
 
   const controlNavBar = useCallback(() => {
     const currentScrollY = window.scrollY;
+    console.log(` hello ${currentScrollY}`);
 
     if (typeof window !== "undefined") {
       if (currentScrollY > lastScrollY) {

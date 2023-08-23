@@ -5,7 +5,7 @@ export const scrollIntoTheView = (id: string) => {
     return;
   }
 
-  element.scrollIntoView({
+  return element.scrollIntoView({
     behavior: "smooth",
     block: "start",
     inline: "nearest",

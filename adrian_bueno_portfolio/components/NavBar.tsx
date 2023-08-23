@@ -50,7 +50,6 @@ const NavBar = (): ReactElement => {
               }}
             >
               {link.name}
-              {/* {scrollIntoTheView(link.id)} */}
             </Link>
           </div>
         ))}

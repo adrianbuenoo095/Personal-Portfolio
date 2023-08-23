@@ -35,6 +35,8 @@ const NavBar = (): ReactElement => {
     }
   }, [controlNavBar]);
 
+  const renderLinks = () => {};
+
   return (
     <>
       <nav className="my-11 hidden md:block">

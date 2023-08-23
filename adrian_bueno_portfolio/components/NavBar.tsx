@@ -47,7 +47,7 @@ const NavBar = (): ReactElement => {
           <div className="p-3 inline-flex text-black font-sans text-lg hover:text-pink">
             <Link href={link.path} key="link" onClick={secondHandleClick}>
               {link.name}
-              {scrollIntoTheView(link.id)}
+              {/* {scrollIntoTheView(link.id)} */}
             </Link>
           </div>
         ))}

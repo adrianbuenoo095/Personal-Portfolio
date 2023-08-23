@@ -14,10 +14,6 @@ const NavBar = (): ReactElement => {
     });
   }, []);
 
-  const secondHandleClick = useCallback((event: React.MouseEvent) => {
-    event.preventDefault();
-  }, []);
-
   const controlNavBar = useCallback(() => {
     const currentScrollY = window.scrollY;
     console.log(` hello ${currentScrollY}`);
@@ -45,7 +41,14 @@ const NavBar = (): ReactElement => {
       <nav className="my-11 hidden md:block">
         {menuList.map((link) => (
           <div className="p-3 inline-flex text-black font-sans text-lg hover:text-pink">
-            <Link href={link.path} key="link" onClick={secondHandleClick}>
+            <Link
+              href={link.path}
+              key="link"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollIntoTheView(link.id);
+              }}
+            >
               {link.name}
               {/* {scrollIntoTheView(link.id)} */}
             </Link>

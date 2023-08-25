@@ -14,7 +14,7 @@ const AboutMe = (): ReactElement => {
           and diversity, making® their art both entertaining and
           thought-provoking. With a growing following on Instagram, the Pocman
           has become a prominent voice in the online art community, inspiring
-          and engaging followers from all walks of life.
+          and engaging followers from all walks of life. Everything is possible
         </p>
       </div>
     </>

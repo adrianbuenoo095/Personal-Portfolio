@@ -15,7 +15,7 @@ const AboutMe = (): ReactElement => {
           thought-provoking. With a growing following on Instagram, the Pocman
           has become a prominent voice in the online art community, inspiring
           and engaging followers from all walks of life. Everything is possible.
-          I am grateful for this life.
+          I am grateful for this life. I am grate for all the amazing things.
         </p>
       </div>
     </>

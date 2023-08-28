@@ -39,10 +39,12 @@ const NavBar = (): ReactElement => {
     <>
       <nav className="my-11 hidden md:block">
         {menuList.map((link) => (
-          <div className="p-3 inline-flex text-black font-sans text-lg hover:text-pink">
+          <div
+            key={link.name}
+            className="p-3 inline-flex text-black font-sans text-lg hover:text-pink"
+          >
             <Link
               href={link.path}
-              key="link"
               onClick={(e) => {
                 e.preventDefault();
                 scrollIntoTheView(link.id);

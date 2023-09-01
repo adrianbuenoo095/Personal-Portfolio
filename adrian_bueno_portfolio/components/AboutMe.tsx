@@ -18,7 +18,8 @@ const AboutMe = (): ReactElement => {
           I am grateful for this life. I am grate for all the amazing things. I
           am grateful for everything that has happened in my life. I am grateful
           the amazing people that I meet everyday and I am grateful for the
-          pocman
+          pocman. I am grateful all the possibilities and all the good things
+          that happen to me life.
         </p>
       </div>
     </>

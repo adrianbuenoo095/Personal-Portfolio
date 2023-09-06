@@ -1,10 +1,13 @@
 import type { ReactElement } from "react";
-
+import Avatar from "./common/Avatar";
 const AboutMe = (): ReactElement => {
   return (
     <>
       <div id="AboutMe" className="h-fit bg-blue ">
-        <div className="flex justify-center text-lg">Who is the Pocman? </div>
+        <div className="flex justify-center text-lg">Who is the Pocman?</div>
+
+        <Avatar size={400} name="Pocman" />
+
         <p className="tracking-wide text-lg">
           The Pocman is a well known illustrator for his illustrations and the
           Pocman stickers. &quot;Person of Color&quot; man. POC man uses their

@@ -1,22 +1,19 @@
 import Image from "next/image";
 
 interface Props {
-  person: { name: string };
+  name: string;
   size: number;
+  id?: number;
 }
 
-let pocmanFace = "/images/pocman_thick_version.png";
+const pocmanFace = "/images/pacman_thick_version.png";
 
-export const Avatar = ({ person, size }: Props) => {
-  const { name } = person;
-
+const Avatar = ({ size, name }: Props) => {
   return (
-    <Image
-      className="avatar"
-      src={pocmanFace}
-      alt={name}
-      width={size}
-      height={size}
-    />
+    <div className="avatar">
+      <Image src={pocmanFace} alt={name} width={size} height={size} />
+    </div>
   );
 };
+
+export default Avatar;

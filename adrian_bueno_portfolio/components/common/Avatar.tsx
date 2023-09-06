@@ -3,7 +3,6 @@ import Image from "next/image";
 interface Props {
   name: string;
   size: number;
-  id?: number;
 }
 
 const pocmanFace = "/images/pocman_thick_version.png";

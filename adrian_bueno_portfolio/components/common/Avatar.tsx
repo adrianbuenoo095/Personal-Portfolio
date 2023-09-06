@@ -6,7 +6,7 @@ interface Props {
   id?: number;
 }
 
-const pocmanFace = "/images/pacman_thick_version.png";
+const pocmanFace = "/images/pocman_thick_version.png";
 
 const Avatar = ({ size, name }: Props) => {
   return (

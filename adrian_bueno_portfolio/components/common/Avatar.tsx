@@ -5,6 +5,11 @@ interface Props {
   size: number;
 }
 
+interface Person {
+  name: string;
+  age: number;
+}
+
 let pocmanFace = "/images/pocman_thick_version.png";
 
 export const Avatar = ({ person, size }: Props) => {

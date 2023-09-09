@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-const controlNavBar = useMemo(() => {
+const controlNavBar = useCallback(() => {
   const currentScrollY = window.scrollY;
   const [lastScrollY, setLastScrollY] = useState(0);
   const [openMenu, setOpenMenu] = useState(false);

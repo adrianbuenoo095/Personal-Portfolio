@@ -10,17 +10,17 @@ interface User {
 function User({userId}: User) {
 
     const [user, setUser] = useState({name: '', email:''});
-    const fetchUser = async () => {
-        const res = await fetch(
-            `https://jsonplaceholder.typicode.com/users/${userId}`
-        );
-        const newUser = await res.json();
-        setUser(newUser);
-    };
-
+    
     useEffect(() => {
+        const fetchUser = async () => {
+            const res = await fetch(
+                `https://jsonplaceholder.typicode.com/users/${userId}`
+            );
+            const newUser = await res.json();
+            setUser(newUser);
+        };
         fetchUser();
-    })
+    }, [userId])
 
     return(
         <ListItem dense divider>

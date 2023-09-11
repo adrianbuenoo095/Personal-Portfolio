@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
 import Avatar from "./common/Avatar";
 
-const AboutMe = (): ReactElement => {
+const About = (): ReactElement => {
   return (
     <>
-      <div id="AboutMe" className="h-fit bg-blue ">
+      <div id="About" className="h-fit bg-blue ">
         <div className="flex justify-center text-lg">Who is the Pocman?</div>
 
         <Avatar size={400} name="Pocman" />
@@ -26,4 +26,4 @@ const AboutMe = (): ReactElement => {
   );
 };
 
-export default AboutMe;
+export default About;

@@ -1,13 +1,13 @@
 export const scrollIntoTheView = (id: string) => {
-  let element = document.getElementById(id) as HTMLElement;
+    let element = document.getElementById(id) as HTMLElement;
 
-  if (!element) {
-    return;
-  }
+    if (!element) {
+        return;
+    }
 
-  return element.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest",
-  });
+    return element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+    });
 };

@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import Avatar from "./common/Avatar";
+
 const AboutMe = (): ReactElement => {
   return (
     <>

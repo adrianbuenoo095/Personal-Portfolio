@@ -6,9 +6,9 @@ hamburgerIcon?.addEventListener("click", opensNavigationBar);
 hamburgerIcon?.addEventListener("click", hidesNavigationBar);
 
 function opensNavigationBar(): void {
-  navLinks?.classList.toggle("open");
+    navLinks?.classList.toggle("open");
 }
 
 function hidesNavigationBar(): void {
-  navLinks?.classList.toggle("fade");
+    navLinks?.classList.toggle("fade");
 }

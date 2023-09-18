@@ -1,24 +1,6 @@
-import { useState, type ReactElement } from "react";
+import { type ReactElement } from "react";
 import Avatar from "./common/Avatar";
 
-const Counter = () => {
-    const [number, setNumber] = useState(0);
-
-    return (
-        <>
-            <h1>{number}</h1>
-            <button
-                onClick={() => {
-                    setNumber((n) => n + 1);
-                    setNumber((n) => n + 1);
-                    setNumber((n) => n + 1);
-                }}
-            >
-                Incriment
-            </button>
-        </>
-    );
-};
 const About = (): ReactElement => {
     return (
         <>

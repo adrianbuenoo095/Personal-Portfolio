@@ -6,7 +6,6 @@ const About = (): ReactElement => {
         <>
             <div id="About" className="h-fit bg-blue ">
                 <div className="flex justify-center text-lg">
-                    <Counter />
                     Who is the Pocman?
                 </div>
                 <Avatar size={400} name="Pocman" />

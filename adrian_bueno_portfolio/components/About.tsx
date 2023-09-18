@@ -1,16 +1,33 @@
-import type { ReactElement } from "react";
+import { useState, type ReactElement } from "react";
 import Avatar from "./common/Avatar";
 
+const Counter = () => {
+    const [number, setNumber] = useState(0);
+
+    return (
+        <>
+            <h1>{number}</h1>
+            <button
+                onClick={() => {
+                    setNumber((n) => n + 1);
+                    setNumber((n) => n + 1);
+                    setNumber((n) => n + 1);
+                }}
+            >
+                Incriment
+            </button>
+        </>
+    );
+};
 const About = (): ReactElement => {
     return (
         <>
             <div id="About" className="h-fit bg-blue ">
                 <div className="flex justify-center text-lg">
+                    <Counter />
                     Who is the Pocman?
                 </div>
-
                 <Avatar size={400} name="Pocman" />
-
                 <p className="tracking-wide text-lg">
                     The Pocman is a well known illustrator for his illustrations
                     and the Pocman stickers. &quot;Person of Color&quot; man.

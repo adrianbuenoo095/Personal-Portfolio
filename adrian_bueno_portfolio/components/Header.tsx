@@ -8,6 +8,7 @@ const Header = (): ReactElement => {
         <>
             <Head>
                 <title>Adrian Bueno</title>
+                <link rel="icon" href="/images/pocmanThick128.png" />
             </Head>
             <div
                 id="Home"

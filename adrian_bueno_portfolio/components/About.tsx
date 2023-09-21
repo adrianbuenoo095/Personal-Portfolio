@@ -22,7 +22,8 @@ const About = (): ReactElement => {
                     online art community, inspiring and engaging followers from
                     all walks of life. Everything is possible. We can do it. I
                     am doing really amazing. Life is amazin. I am grateful for
-                    this wonderful life.
+                    this wonderful life. I am grateful for the job as a frotend
+                    developer 100% remote.
                 </p>
             </div>
         </>

@@ -17,7 +17,7 @@ const instagramLink = (
 const linkedinLink = (
     <Link
         href="https://www.linkedin.com/in/adrian-bueno-08189b108/"
-        className="p-3 text-lg"
+        className="p-3 text-lg bg-pink"
         target="_blank"
     >
         <FontAwesomeIcon icon={faLinkedin} />
@@ -39,8 +39,8 @@ const Footer = (): ReactElement => {
 
     return (
         <>
-            <footer id="footer" className="text-center">
-                <div className="flex gap-3 justify-center">
+            <footer id="footer" className="text-center ">
+                <div className="flex gap-3 justify-center ">
                     <span>
                         {instagramLink}
                         {linkedinLink}

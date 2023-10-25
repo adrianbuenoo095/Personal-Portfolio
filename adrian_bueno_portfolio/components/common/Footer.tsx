@@ -17,7 +17,7 @@ const instagramLink = (
 const linkedinLink = (
     <Link
         href="https://www.linkedin.com/in/adrian-bueno-08189b108/"
-        className="p-3 text-lg bg-pink"
+        className="p-3 text-lg "
         target="_blank"
     >
         <FontAwesomeIcon icon={faLinkedin} />
@@ -40,14 +40,14 @@ const Footer = (): ReactElement => {
     return (
         <>
             <footer id="footer" className="text-center ">
-                <div className="flex gap-3 justify-center ">
-                    <span>
-                        {instagramLink}
-                        {linkedinLink}
-                        {behanceLink}
-                    </span>
+                <div>
+                    <div>&copy; The Pocman {currentYear}&nbsp;</div>
+                    <div className="flex gap-3 justify-center py-1 ">
+                        <span>{instagramLink}</span>
+                        <span>{linkedinLink}</span>
+                        <span>{behanceLink}</span>
+                    </div>
                 </div>
-                <p>&copy; The Pocman {currentYear}&nbsp;</p>
             </footer>
         </>
     );

@@ -7,7 +7,7 @@ import type { ReactElement } from "react";
 const instagramLink = (
     <Link
         href="https://www.instagram.com/thepocman/"
-        className="p-3 text-lg"
+        className="p-3"
         target="_blank"
     >
         <FontAwesomeIcon icon={faInstagram} />
@@ -17,7 +17,7 @@ const instagramLink = (
 const linkedinLink = (
     <Link
         href="https://www.linkedin.com/in/adrian-bueno-08189b108/"
-        className="p-3 text-lg "
+        className="p-3"
         target="_blank"
     >
         <FontAwesomeIcon icon={faLinkedin} />
@@ -27,7 +27,7 @@ const linkedinLink = (
 const behanceLink = (
     <Link
         href="https://www.behance.net/thepocman"
-        className="p-3 text-lg"
+        className="p-3 "
         target="_blank"
     >
         <FontAwesomeIcon icon={faBehance} />
@@ -40,7 +40,7 @@ const Footer = (): ReactElement => {
     return (
         <div id="footer" className="text-center ">
             <div>&copy; The Pocman {currentYear}&nbsp;</div>
-            <div className="flex gap-3 justify-center py-1">
+            <div className="flex gap-3 justify-center py-1 text-base">
                 <span>{instagramLink}</span>
                 <span>{linkedinLink}</span>
                 <span>{behanceLink}</span>

@@ -42,7 +42,7 @@ const Footer = (): ReactElement => {
             <footer id="footer" className="text-center ">
                 <div>
                     <div>&copy; The Pocman {currentYear}&nbsp;</div>
-                    <div className="flex gap-3 justify-center py-1 ">
+                    <div className="flex gap-3 justify-center py-1">
                         <span>{instagramLink}</span>
                         <span>{linkedinLink}</span>
                         <span>{behanceLink}</span>

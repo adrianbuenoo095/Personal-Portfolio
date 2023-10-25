@@ -38,18 +38,16 @@ const Footer = (): ReactElement => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <>
-            <footer id="footer" className="text-center ">
-                <div>
-                    <div>&copy; The Pocman {currentYear}&nbsp;</div>
-                    <div className="flex gap-3 justify-center py-1">
-                        <span>{instagramLink}</span>
-                        <span>{linkedinLink}</span>
-                        <span>{behanceLink}</span>
-                    </div>
+        <div id="footer" className="text-center ">
+            <div>
+                <div>&copy; The Pocman {currentYear}&nbsp;</div>
+                <div className="flex gap-3 justify-center py-1">
+                    <span>{instagramLink}</span>
+                    <span>{linkedinLink}</span>
+                    <span>{behanceLink}</span>
                 </div>
-            </footer>
-        </>
+            </div>
+        </div>
     );
 };
 

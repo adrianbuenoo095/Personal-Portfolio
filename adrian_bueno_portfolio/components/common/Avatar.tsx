@@ -2,15 +2,14 @@ import Image from "next/image";
 
 interface Props {
     name: string;
-    size: number;
 }
 
-const pocmanFace = "/images/pocman_thick_version.png";
+const thePocmanFace = "/images/pocman_thick_version.png";
 
-const Avatar = ({ size, name }: Props) => {
+const Avatar = ({ name }: Props) => {
     return (
         <div className="avatar">
-            <Image src={pocmanFace} alt={name} width={size} height={size} />
+            <Image src={thePocmanFace} alt={name} />
         </div>
     );
 };

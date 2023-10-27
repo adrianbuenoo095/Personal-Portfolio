@@ -8,7 +8,7 @@ const About = (): ReactElement => {
                 <div className="flex justify-center text-lg">
                     Who is the Pocman?
                 </div>
-                <Avatar name="Pocman" />
+                <Avatar size={400} name="Pocman" />
                 <p className="tracking-wide text-lg">
                     The Pocman is a well known illustrator for his illustrations
                     and the Pocman stickers. &quot;Person of Color&quot; man.

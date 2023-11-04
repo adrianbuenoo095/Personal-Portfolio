@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 const SKILLSET = [
     { name: "Web Designer" },
     { name: "Illustrator" },
-    { name: "FullStack Developer" },
+    { name: "Full-Stack Developer" },
 ];
 
 const Portfolio = (): ReactElement => {

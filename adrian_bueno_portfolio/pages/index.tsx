@@ -1,5 +1,5 @@
 import AboutMe from "@/components/About";
-import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Navigation from "@/components/NavBar";
 import Portfolio from "@/components/Portfolio";
@@ -12,7 +12,7 @@ export default function Home() {
             <Header />
             <AboutMe />
             <Portfolio />
-            <Blog />
+            <Contact />
             <Footer />
         </>
     );

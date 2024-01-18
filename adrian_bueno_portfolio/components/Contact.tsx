@@ -3,7 +3,7 @@ import ContactMe from "./ContactForm";
 
 const Contact = (): ReactElement => {
     return (
-        <div id="Contact" className="bg-gray h-screen text-red-900">
+        <div id="Contact" className="bg-pink h-screen text-red">
             <div className="flex justify-center items-center">
                 <ContactMe />
             </div>

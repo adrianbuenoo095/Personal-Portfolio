@@ -23,7 +23,7 @@ const ContactMe = (): ReactElement => {
                     <input
                         type="text"
                         placeholder="Full Name"
-                        className="bg-gray border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5 dark:bg-gray dark:border-gray dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
                         {...register("name", { required: true })}
                     />
                 </div>
@@ -37,7 +37,7 @@ const ContactMe = (): ReactElement => {
                     <input
                         type="email"
                         placeholder="example@domain.com"
-                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray dark:text-white darkfocus:ring-blue dark:focus:border-blue"
                         {...register("email", { required: true })}
                     />
                 </div>
@@ -53,7 +53,7 @@ const ContactMe = (): ReactElement => {
                     <textarea
                         rows={4}
                         placeholder="Type your message"
-                        className="block p-2.5 w-full text-sm text-gray bg-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue dark:bg-gray dark:border-gray dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+                        className="block p-2.5 w-full text-sm text-gray bg-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue dark:border-gray dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
                         {...register("message", { required: true })}
                     ></textarea>
                 </div>

@@ -6,7 +6,7 @@ export type FormData = {
     email: string;
     message: string;
 };
-const ContactMe = (): ReactElement => {
+const ContactForm = (): ReactElement => {
     const { register, handleSubmit } = useForm<FormData>();
     const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
 
@@ -67,4 +67,4 @@ const ContactMe = (): ReactElement => {
     );
 };
 
-export default ContactMe;
+export default ContactForm;

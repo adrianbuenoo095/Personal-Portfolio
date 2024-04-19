@@ -1,5 +1,5 @@
-import { menuList } from "@/lib/common /MenuList";
-import { scrollIntoTheView } from "@/lib/common /helpers/scrollIntoTheView";
+import {menuList} from "@/components/common/MenuList";
+import { scrollIntoTheView } from "@/lib/common/helpers/scrollIntoTheView";
 import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
 import Burger from "./common/Burger";

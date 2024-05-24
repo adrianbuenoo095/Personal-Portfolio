@@ -1,5 +1,5 @@
 import {menuList} from "@/components/common/MenuList";
-import { scrollIntoTheView } from "@/lib/common/helpers/scrollIntoTheView";
+import { scrollIntoView } from "@/lib/common/helpers/scrollIntoView";
 import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
 import Burger from "./common/Burger";
@@ -24,7 +24,7 @@ const NavBar = (): ReactElement => {
                             href={link.path}
                             onClick={(e) => {
                                 e.preventDefault();
-                                scrollIntoTheView(link.id);
+                                scrollIntoView(link.id);
                             }}
                         >
                             {link.name}
@@ -49,7 +49,7 @@ const NavBar = (): ReactElement => {
                                     onClick={(e) => {
                                         e.preventDefault();
                                         if (link.id) {
-                                            scrollIntoTheView(link.id);
+                                            scrollIntoView(link.id);
                                         }
                                     }}
                                 >

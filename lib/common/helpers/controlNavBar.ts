@@ -1,25 +1,27 @@
 import { useCallback, useEffect, useState } from "react";
 
-const [lastScrollY, setLastScrollY] = useState(0);
-
-const controlNavBar = useCallback(() => {
-    const currentScrollY = window.scrollY;
+const useScrollControl = () => {
+    const [lastScrollY, setLastScrollY] = useState(0);
     const [openMenu, setOpenMenu] = useState(false);
+    const controlNavBar = useCallback(() => {
+        const currentScrollY = window.scrollY;
 
-    if (typeof window !== "undefined") {
-        if (currentScrollY > lastScrollY) {
-            setOpenMenu(false);
+        if (typeof window !== "undefined") {
+            if (currentScrollY > lastScrollY) {
+                setOpenMenu(false);
+            }
+            setLastScrollY(currentScrollY);
         }
-        setLastScrollY(currentScrollY);
-    }
-}, [lastScrollY]);
+    }, [lastScrollY]);
 
-useEffect(() => {
-    if (typeof window !== "undefined") {
-        window.addEventListener("scroll", controlNavBar);
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", controlNavBar);
 
-        return () => {
-            window.removeEventListener("scroll", controlNavBar);
-        };
-    }
-}, [controlNavBar]);
+            return () => {
+                window.removeEventListener("scroll", controlNavBar);
+            };
+        }
+    }, [controlNavBar]);
+}
+export default useScrollControl;

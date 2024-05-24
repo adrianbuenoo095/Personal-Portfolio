@@ -1,4 +1,4 @@
-export const scrollIntoTheView = (id: string) => {
+ const useScrollIntoTheView = (id: string) => {
     let element = document.getElementById(id) as HTMLElement;
 
     if (!element) {
@@ -11,3 +11,5 @@ export const scrollIntoTheView = (id: string) => {
         inline: "nearest",
     });
 };
+
+ export default useScrollIntoTheView;

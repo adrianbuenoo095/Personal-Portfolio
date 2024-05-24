@@ -1,4 +1,4 @@
- const useScrollIntoTheView = (id: string) => {
+ export const scrollIntoTheView = (id: string) => {
     let element = document.getElementById(id) as HTMLElement;
 
     if (!element) {
@@ -12,4 +12,3 @@
     });
 };
 
- export default useScrollIntoTheView;

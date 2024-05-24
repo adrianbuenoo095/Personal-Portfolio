@@ -6,7 +6,6 @@ import Burger from "./common/Burger";
 
 const NavBar = (): ReactElement => {
     const [openMenu, setOpenMenu] = useState(false);
-
     const handleClick = useCallback(() => {
         setOpenMenu((prevState) => {
             return !prevState;

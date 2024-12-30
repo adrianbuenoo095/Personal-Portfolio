@@ -3,8 +3,8 @@ import ContactForm from "./ContactForm";
 
 const Contact = (): ReactElement => {
     return (
-        <div id="Contact" className="bg-pink h-screen text-red">
-            <div className="flex justify-center">
+        <div id="Contact" className="bg-pink text-red">
+            <div className="grid grid-cols-1 justify-items-center bg-slate-100 p-8">
                 <ContactForm />
             </div>
         </div>

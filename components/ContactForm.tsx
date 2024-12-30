@@ -59,7 +59,7 @@ const ContactForm = (): ReactElement => {
                 </div>
             </div>
             <div className="p-2 w-full">
-                <button className="text-white bg-blue hover:bg-blue focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue dark:hover:bg-blue dark:focus:ring-blue">
+                <button className="text-white font-bold bg-blue hover:bg-blue focus:ring-4 focus:outline-none focus:ring-blue rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue dark:hover:bg-blue dark:focus:ring-blue">
                     Submit
                 </button>
             </div>

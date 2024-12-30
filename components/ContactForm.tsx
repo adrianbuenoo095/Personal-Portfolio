@@ -53,7 +53,7 @@ const ContactForm = (): ReactElement => {
                     <textarea
                         rows={4}
                         placeholder="Type your message"
-                        className="block p-2.5 w-full text-sm text-gray bg-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue dark:border-gray dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+                        className="block p-2.5 w-full text-sm text-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue dark:border-gray dark:placeholder-gray dark:focus:ring-blue dark:focus:border-blue"
                         {...register("message", { required: true })}
                     ></textarea>
                 </div>

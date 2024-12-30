@@ -1,5 +1,5 @@
 // prettier-ignore
-import { faBehance, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faBehance, faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import type { ReactElement } from "react";
@@ -25,6 +25,12 @@ const behanceLink = (
     </Link>
 );
 
+const githubLink = (
+    <Link href="https://github.com/adrianbuenoo095" target="_blank">
+        <FontAwesomeIcon className="w-[25px]" icon={faGithub} />
+    </Link>
+);
+
 const Footer = (): ReactElement => {
     const currentYear = new Date().getFullYear();
 
@@ -33,10 +39,11 @@ const Footer = (): ReactElement => {
             id="footer"
             className="text-sm text-black text-center p-4 bg-black space-y-1"
         >
-            <div>&copy; The Pocman {currentYear}&nbsp;</div>
+            <div>&copy;{currentYear} The Pocman.&nbsp;All rights reserved.</div>
             <div className="flex gap-3 justify-center py-1">
                 <span>{instagramLink}</span>
                 <span>{linkedinLink}</span>
+                <span>{githubLink}</span>
                 <span>{behanceLink}</span>
             </div>
         </div>

@@ -48,9 +48,7 @@ const NavBar = (): ReactElement => {
                                     href={link.path}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        if (link.id) {
                                             scrollIntoView(link.id);
-                                        }
                                     }}
                                 >
                                     {link.name}

@@ -18,7 +18,7 @@ const NavBar = (): ReactElement => {
                 {MenuItems.map((link) => (
                     <div
                         key={link.name}
-                        className="p-3 inline-flex text-black font-sans text-lg hover:text-pink"
+                        className={openMenu ? 'flex flex-col gap-5' : 'p-3 inline-flex text-black font-sans text-lg hover:text-pink' }
                     >
                         <Link
                             href={link.path}

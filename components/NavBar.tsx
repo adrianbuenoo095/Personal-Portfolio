@@ -1,4 +1,4 @@
-import {menuList} from "@/components/common/MenuList";
+import { MenuItems} from "@/components/common/MenuItems";
 import { scrollIntoView } from "@/lib/common/helpers/scrollIntoView";
 import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
@@ -15,7 +15,7 @@ const NavBar = (): ReactElement => {
     return (
         <>
             <nav className="my-11 hidden md:block">
-                {menuList.map((link) => (
+                {MenuItems.map((link) => (
                     <div
                         key={link.name}
                         className="p-3 inline-flex text-black font-sans text-lg hover:text-pink"
@@ -41,7 +41,7 @@ const NavBar = (): ReactElement => {
             {openMenu && (
                 <div className="md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4">
                     <div className="flex flex-col gap-5">
-                        {menuList.map((link) => (
+                        {MenuItems.map((link) => (
                             <div key={link.name} className="p-3 inline-flex">
                                 <Link
                                     className="hover:text-pink"

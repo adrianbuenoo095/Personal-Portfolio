@@ -14,7 +14,7 @@ const NavBar = (): ReactElement => {
 
     return (
         <>
-            <nav className="my-11 hidden md:block">
+            <nav className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block' }>
                 {MenuItems.map((link) => (
                     <div
                         key={link.name}
@@ -38,26 +38,6 @@ const NavBar = (): ReactElement => {
             >
                 <Burger />
             </div>
-            {openMenu && (
-                <div className="md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4">
-                    <div className="flex flex-col gap-5">
-                        {MenuItems.map((link) => (
-                            <div key={link.name} className="p-3 inline-flex">
-                                <Link
-                                    className="hover:text-pink"
-                                    href={link.path}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                            scrollIntoView(link.id);
-                                    }}
-                                >
-                                    {link.name}
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
         </>
     );
 };

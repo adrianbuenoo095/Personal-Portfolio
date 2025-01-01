@@ -13,6 +13,9 @@ const NavBar = (): ReactElement => {
     }, []);
 
     return (
+        //new: hidden sm:ml-6 sm:block
+        //old: md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block'
+
         <>
             <nav className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block' }>
                 {MenuItems.map((link) => (

@@ -3,6 +3,7 @@ import { scrollIntoView } from "@/lib/common/helpers/scrollIntoView";
 import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
 import Burger from "./common/Burger";
+import { isExternalLink } from "@/lib/common/helpers/isExternalLink";
 
 const NavBar = (): ReactElement => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -17,6 +18,8 @@ const NavBar = (): ReactElement => {
         //old: md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block'
 
         <>
+
+
             <nav className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'hidden md:block fixed top-5 text-white'}>
                 {MenuItems.map((link) => (
                     <div
@@ -27,7 +30,9 @@ const NavBar = (): ReactElement => {
                             href={link.path}
                             onClick={(e) => {
                                 e.preventDefault();
-                                scrollIntoView(link.id);
+                                if(!isExternalLink(link.id , link.path)){
+                                    scrollIntoView(link.id);
+                                }
                             }}
                         >
                             {link.name}

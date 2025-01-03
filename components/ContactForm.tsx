@@ -16,14 +16,14 @@ const ContactForm = (): ReactElement => {
                 <div>
                     <label
                         htmlFor="name"
-                        className="block mb-2 text-sm font-medium text-gray dark:text-white"
+                        className="block mb-2 text-sm font-medium text-gray"
                     >
                         Full Name
                     </label>
                     <input
                         type="text"
                         placeholder="Full Name"
-                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray dark:text-white dark:focus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray  dark:focus:ring-blue dark:focus:border-blue"
                         {...register("name", { required: true })}
                     />
                 </div>
@@ -37,7 +37,7 @@ const ContactForm = (): ReactElement => {
                     <input
                         type="email"
                         placeholder="example@domain.com"
-                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray dark:text-white darkfocus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray darkfocus:ring-blue dark:focus:border-blue"
                         {...register("email", { required: true })}
                     />
                 </div>

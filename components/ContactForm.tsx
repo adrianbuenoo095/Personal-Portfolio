@@ -24,14 +24,14 @@ const ContactForm = (): ReactElement => {
                     <input
                         type="text"
                         placeholder="Full Name"
-                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray  dark:focus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5"
                         {...register("name", { required: true })}
                     />
                 </div>
                 <div className="mb-6">
                     <label
                         htmlFor="email"
-                        className="block mb-2 text-sm font-medium text-gray dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         Email Address
                     </label>
@@ -47,14 +47,14 @@ const ContactForm = (): ReactElement => {
                 <div>
                     <label
                         htmlFor="message"
-                        className="block mb-2 text-sm font-medium text-gray dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         Message
                     </label>
                     <textarea
                         rows={4}
                         placeholder="Type your message"
-                        className="block p-2.5 w-full text-sm text-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue dark:border-gray dark:placeholder-gray dark:focus:ring-blue dark:focus:border-blue"
+                        className="block p-2.5 w-full text-sm text-gray rounded-lg border border-gray-300 focus:ring-blue focus:border-blue"
                         {...register("message", { required: true })}
                     ></textarea>
                 </div>

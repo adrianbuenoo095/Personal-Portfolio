@@ -38,7 +38,7 @@ const ContactForm = (): ReactElement => {
                     <input
                         type="email"
                         placeholder="example@domain.com"
-                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5   dark:placeholder-gray darkfocus:ring-blue dark:focus:border-blue"
+                        className="border border-gray text-gray text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5"
                         {...register("email", { required: true })}
                     />
                 </div>

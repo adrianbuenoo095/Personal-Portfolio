@@ -1,5 +1,5 @@
 import Head from "next/head";
-import type { ReactElement } from "react";
+import { ReactElement } from "react";
 import { Button } from "./common/Button";
 
 const Header = (): ReactElement => {

@@ -6,6 +6,7 @@ export type FormData = {
     email: string;
     message: string;
 };
+
 const ContactForm = (): ReactElement => {
     const { register, handleSubmit } = useForm<FormData>();
     const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
@@ -16,7 +17,7 @@ const ContactForm = (): ReactElement => {
                 <div>
                     <label
                         htmlFor="name"
-                        className="block mb-2 text-sm font-medium text-gray"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         Full Name
                     </label>

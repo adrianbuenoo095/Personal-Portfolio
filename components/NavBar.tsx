@@ -18,24 +18,21 @@ const NavBar = (): ReactElement => {
         //old: md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block'
 
         <>
-
-
             <nav className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'hidden md:block fixed top-5 text-white'}>
-                {MenuItems.map((link) => (
+                {MenuItems.map(( {name, path,id} ) => (
                     <div
-                        key={link.name}
+                        key={name}
                         className={openMenu ? 'flex flex-col gap-5' : 'p-3 inline-flex text-black font-sans text-lg hover:text-pink' }
                     >
                         <Link
-                            href={link.path}
+                            href={path}
                             onClick={(e) => {
                                 e.preventDefault();
-                                if(!isExternalLink(link.id , link.path)){
-                                    scrollIntoView(link.id);
-                                }
+                                isExternalLink(path)
+                                scrollIntoView(id);
                             }}
                         >
-                            {link.name}
+                            {name}
                         </Link>
                     </div>
                 ))}

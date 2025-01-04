@@ -1,6 +1,5 @@
-export const  isExternalLink = (id: string , path: string) : boolean => {
+export const  isExternalLink = (path: string) : boolean => {
     let operation = false;
-    if(id==="Shop"){
         try {
             let url;
             url = new URL(path);
@@ -9,6 +8,6 @@ export const  isExternalLink = (id: string , path: string) : boolean => {
         }catch(_){
             operation = false;
         }
-    }
+
     return operation;
 };

@@ -4,7 +4,7 @@ const useScrollControl = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     console.log("lastScrollY",lastScrollY)
     const [openMenu, setOpenMenu] = useState(false);
-    const controlNavBar = useCallback(() => {
+    const handleScroll = useCallback(() => {
         const currentScrollY = window.scrollY;
 
         if (typeof window !== "undefined") {
@@ -17,12 +17,12 @@ const useScrollControl = () => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            window.addEventListener("scroll", controlNavBar);
+            window.addEventListener("scroll", handleScroll);
 
             return () => {
-                window.removeEventListener("scroll", controlNavBar);
+                window.removeEventListener("scroll", handleScroll);
             };
         }
-    }, [controlNavBar]);
+    }, [handleScroll]);
 }
 export default useScrollControl;

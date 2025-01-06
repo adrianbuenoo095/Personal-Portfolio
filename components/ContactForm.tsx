@@ -15,6 +15,9 @@ const ContactForm = (): ReactElement => {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
+                    <h1>Get in Touch</h1>
+                </div>
+                <div>
                     <label
                         htmlFor="name"
                         className="block mb-2 text-sm font-medium text-white"

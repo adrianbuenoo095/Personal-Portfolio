@@ -4,11 +4,11 @@ import Link from "next/link";
 import { ReactElement, useCallback, useState } from "react";
 import Burger from "./common/Burger";
 import { isExternalLink } from "@/lib/common/helpers/isExternalLink";
-import controlNavBar from "@/lib/common/helpers/useScrollControl";
+import useScrollControl from "@/lib/common/helpers/useScrollControl";
 
 const NavBar = (): ReactElement => {
 
-    const [openMenu, setOpenMenu] = useState(false);
+    const {openMenu, setOpenMenu}= useScrollControl();
 
     const handleClick = useCallback(() => {
         setOpenMenu((prevState) => {
@@ -21,7 +21,7 @@ const NavBar = (): ReactElement => {
         //old: md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'my-11 hidden md:block'
 
         <>
-            <nav onScroll={controlNavBar} className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'hidden md:block fixed top-5 text-white'}>
+            <nav className={ openMenu ? 'md:hidden fixed top-5 right-0 bg-gray-dark text-white p-4' : 'hidden md:block fixed top-5 text-white'}>
                 {MenuItems.map(( {name, path,id} ) => (
                     <div
                         key={name}

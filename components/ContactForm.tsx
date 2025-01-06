@@ -12,11 +12,9 @@ const ContactForm = (): ReactElement => {
     const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
 
     return (
+        <div className="grid grid-cols-1 justify-items-center bg-slate-100 p-8">
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
-                <div>
-                    <h1>Get in Touch</h1>
-                </div>
                 <div>
                     <label
                         htmlFor="name"
@@ -68,6 +66,7 @@ const ContactForm = (): ReactElement => {
                 </button>
             </div>
         </form>
+        </div>
     );
 };
 

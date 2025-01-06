@@ -1,10 +1,5 @@
 import { ReactElement } from "react";
 
-const SKILLSET = [
-    { name: "Web Designer" },
-    { name: "Illustrator" },
-    { name: "Full-Stack Developer" },
-];
 
 const Portfolio = (): ReactElement => {
     return (
@@ -14,11 +9,6 @@ const Portfolio = (): ReactElement => {
                 className="bg-green w-screen max-w-full h-screen text-center"
             >
                 Portfolio
-                {SKILLSET.map((skill) => (
-                    <div className="bg-blue " key={skill.name}>
-                        {skill.name}
-                    </div>
-                ))}
             </div>
         </>
     );

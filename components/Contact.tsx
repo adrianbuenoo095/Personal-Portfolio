@@ -7,7 +7,9 @@ const Contact = (): ReactElement => {
             <div className="text-center">
                 <h1>Get in Touch</h1>
             </div>
+            <div className="flex justify-center items-center p-8">
                 <ContactForm />
+            </div>
         </div>
     );
 };

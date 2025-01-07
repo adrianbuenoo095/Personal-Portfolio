@@ -15,7 +15,7 @@ const ContactForm = (): ReactElement => {
 
         <div>
             <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 text-white">Get in Touch</h1>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">I'll get back to you within 24 hours.</p>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 text-gray-900 sm:text-xl">I'll get back to you within 24 hours.</p>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                     <div>

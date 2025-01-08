@@ -1,4 +1,4 @@
- export const scrollIntoView = (id: string) => {
+export const scrollIntoView = (id: string) => {
     let element = document.getElementById(id) as HTMLElement;
 
     if (!element) {
@@ -11,4 +11,3 @@
         inline: "nearest",
     });
 };
-

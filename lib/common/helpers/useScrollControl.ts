@@ -25,6 +25,6 @@ const useScrollControl = () => {
         }
     }, [handleScroll]);
 
-    return {openMenu, setOpenMenu};
-}
+    return { openMenu, setOpenMenu };
+};
 export default useScrollControl;

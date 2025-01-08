@@ -1,30 +1,30 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react'
 
 const useScrollControl = () => {
-    const [lastScrollY, setLastScrollY] = useState(0);
-    const [openMenu, setOpenMenu] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0)
+    const [openMenu, setOpenMenu] = useState(false)
 
     const handleScroll = useCallback(() => {
-        const currentScrollY = window.scrollY;
+        const currentScrollY = window.scrollY
 
-        if (typeof window !== "undefined") {
+        if (typeof window !== 'undefined') {
             if (currentScrollY > lastScrollY) {
-                setOpenMenu(false);
+                setOpenMenu(false)
             }
-            setLastScrollY(currentScrollY);
+            setLastScrollY(currentScrollY)
         }
-    }, [lastScrollY]);
+    }, [lastScrollY])
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.addEventListener("scroll", handleScroll);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', handleScroll)
 
             return () => {
-                window.removeEventListener("scroll", handleScroll);
-            };
+                window.removeEventListener('scroll', handleScroll)
+            }
         }
-    }, [handleScroll]);
+    }, [handleScroll])
 
-    return { openMenu, setOpenMenu };
-};
-export default useScrollControl;
+    return { openMenu, setOpenMenu }
+}
+export default useScrollControl
